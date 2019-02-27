@@ -1,0 +1,14 @@
+---
+title: "ST Data Management and Visualization with R"
+author: "Aitor Ameztegui - Marcos Rodrigues"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+---
+
+# Visualizing amounts, proportions and distributions
+## Visualizing amounts: bar plots, dot plots and heatmaps
+## Visualizing proportions: pie charts, stacked bars, mosaic plots
+## Visualizing distributions: histograms and density plots
+## Percentiles, quartiles and boxplots, violin plots, ridgeline plots

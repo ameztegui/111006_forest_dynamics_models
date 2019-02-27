@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>6 Fundamentals of data Visualization | ST Data Management and Visualization with R</title>
+  <meta name="description" content="6 Fundamentals of data Visualization | ST Data Management and Visualization with R">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="6 Fundamentals of data Visualization | ST Data Management and Visualization with R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Fundamentals of data Visualization | ST Data Management and Visualization with R" />
+  
+  
+  
+
+<meta name="author" content="Aitor Ameztegui - Marcos Rodrigues">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="program-in-r-within-the-tidyverse.html">
+<link rel="next" href="visualizing-amounts-proportions-and-distributions.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentation</a></li>
+<li class="part"><span><b>I Unit 1: Data Management</b></span></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#the-data-pipeline-from-acquisition-to-communication"><i class="fa fa-check"></i><b>2.1</b> The data pipeline: from acquisition to communication</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#thetidyverse-and-the-concept-of-tidy-data"><i class="fa fa-check"></i><b>2.2</b> Thetidyverse and the concept of tidy data</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#good-coding-practices"><i class="fa fa-check"></i><b>2.3</b> Good coding practices</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#workflow-projects-in-r-studio"><i class="fa fa-check"></i><b>2.4</b> Workflow: projects in R studio</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="explore-your-data.html"><a href="explore-your-data.html"><i class="fa fa-check"></i><b>3</b> Explore your data</a><ul>
+<li class="chapter" data-level="3.1" data-path="explore-your-data.html"><a href="explore-your-data.html#basic-data-visualization-woth-ggplot2"><i class="fa fa-check"></i><b>3.1</b> Basic data visualization woth ggplot2</a></li>
+<li class="chapter" data-level="3.2" data-path="explore-your-data.html"><a href="explore-your-data.html#data-transformation-create-new-variables-filter-select-and-organize-dara"><i class="fa fa-check"></i><b>3.2</b> Data transformation: create new variables, filter, select and organize dara</a></li>
+<li class="chapter" data-level="3.3" data-path="explore-your-data.html"><a href="explore-your-data.html#types-of-data-categorical-and-numerical-data-transformation"><i class="fa fa-check"></i><b>3.3</b> Types of data: categorical and numerical, data transformation</a></li>
+<li class="chapter" data-level="3.4" data-path="explore-your-data.html"><a href="explore-your-data.html#working-with-factors"><i class="fa fa-check"></i><b>3.4</b> Working with factors</a></li>
+<li class="chapter" data-level="3.5" data-path="explore-your-data.html"><a href="explore-your-data.html#exploratory-data-analysis"><i class="fa fa-check"></i><b>3.5</b> Exploratory data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="wrangle-your-data.html"><a href="wrangle-your-data.html"><i class="fa fa-check"></i><b>4</b> Wrangle your data</a><ul>
+<li class="chapter" data-level="4.1" data-path="wrangle-your-data.html"><a href="wrangle-your-data.html#data-import-and-export-reading-and-writing-different-file-types"><i class="fa fa-check"></i><b>4.1</b> Data import and export: reading and writing different file types</a></li>
+<li class="chapter" data-level="4.2" data-path="wrangle-your-data.html"><a href="wrangle-your-data.html#tidy-data-modify-your-data-frame"><i class="fa fa-check"></i><b>4.2</b> Tidy data: modify your data frame</a></li>
+<li class="chapter" data-level="4.3" data-path="wrangle-your-data.html"><a href="wrangle-your-data.html#working-with-several-data-tables-relational-data"><i class="fa fa-check"></i><b>4.3</b> Working with several data tables: relational data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="program-in-r-within-the-tidyverse.html"><a href="program-in-r-within-the-tidyverse.html"><i class="fa fa-check"></i><b>5</b> Program in R within the tidyverse</a><ul>
+<li class="chapter" data-level="5.1" data-path="program-in-r-within-the-tidyverse.html"><a href="program-in-r-within-the-tidyverse.html#pipes-and-pipelines"><i class="fa fa-check"></i><b>5.1</b> Pipes and pipelines</a></li>
+<li class="chapter" data-level="5.2" data-path="program-in-r-within-the-tidyverse.html"><a href="program-in-r-within-the-tidyverse.html#functions"><i class="fa fa-check"></i><b>5.2</b> Functions</a></li>
+<li class="chapter" data-level="5.3" data-path="program-in-r-within-the-tidyverse.html"><a href="program-in-r-within-the-tidyverse.html#vectors-and-iteration"><i class="fa fa-check"></i><b>5.3</b> Vectors and iteration</a></li>
+</ul></li>
+<li class="part"><span><b>II Unit 2: Data Visualization</b></span></li>
+<li class="chapter" data-level="6" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html"><i class="fa fa-check"></i><b>6</b> Fundamentals of data Visualization</a><ul>
+<li class="chapter" data-level="6.1" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#types-of-data-and-aesthetics"><i class="fa fa-check"></i><b>6.1</b> Types of data and aesthetics</a></li>
+<li class="chapter" data-level="6.2" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#coordinate-systems-axes-and-colour-scales"><i class="fa fa-check"></i><b>6.2</b> Coordinate systems, axes and colour scales</a></li>
+<li class="chapter" data-level="6.3" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#principles-of-figure-design"><i class="fa fa-check"></i><b>6.3</b> Principles of figure design</a></li>
+<li class="chapter" data-level="6.4" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#how-ggplot-works"><i class="fa fa-check"></i><b>6.4</b> How ggplot works</a></li>
+<li class="chapter" data-level="6.5" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#mapping-aesthetics"><i class="fa fa-check"></i><b>6.5</b> Mapping aesthetics</a></li>
+<li class="chapter" data-level="6.6" data-path="fundamentals-of-data-visualization.html"><a href="fundamentals-of-data-visualization.html#directory-of-visualizations"><i class="fa fa-check"></i><b>6.6</b> Directory of visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="visualizing-amounts-proportions-and-distributions.html"><a href="visualizing-amounts-proportions-and-distributions.html"><i class="fa fa-check"></i><b>7</b> Visualizing amounts, proportions and distributions</a><ul>
+<li class="chapter" data-level="7.1" data-path="visualizing-amounts-proportions-and-distributions.html"><a href="visualizing-amounts-proportions-and-distributions.html#visualizing-amounts-bar-plots-dot-plots-and-heatmaps"><i class="fa fa-check"></i><b>7.1</b> Visualizing amounts: bar plots, dot plots and heatmaps</a></li>
+<li class="chapter" data-level="7.2" data-path="visualizing-amounts-proportions-and-distributions.html"><a href="visualizing-amounts-proportions-and-distributions.html#visualizing-proportions-pie-charts-stacked-bars-mosaic-plots"><i class="fa fa-check"></i><b>7.2</b> Visualizing proportions: pie charts, stacked bars, mosaic plots</a></li>
+<li class="chapter" data-level="7.3" data-path="visualizing-amounts-proportions-and-distributions.html"><a href="visualizing-amounts-proportions-and-distributions.html#visualizing-distributions-histograms-and-density-plots"><i class="fa fa-check"></i><b>7.3</b> Visualizing distributions: histograms and density plots</a></li>
+<li class="chapter" data-level="7.4" data-path="visualizing-amounts-proportions-and-distributions.html"><a href="visualizing-amounts-proportions-and-distributions.html#percentiles-quartiles-and-boxplots-violin-plots-ridgeline-plots"><i class="fa fa-check"></i><b>7.4</b> Percentiles, quartiles and boxplots, violin plots, ridgeline plots</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="revealing-trends-visualization-of-time-series-data.html"><a href="revealing-trends-visualization-of-time-series-data.html"><i class="fa fa-check"></i><b>8</b> Revealing trends: visualization of time-series data</a><ul>
+<li class="chapter" data-level="8.1" data-path="revealing-trends-visualization-of-time-series-data.html"><a href="revealing-trends-visualization-of-time-series-data.html#individual-time-series-data"><i class="fa fa-check"></i><b>8.1</b> Individual time series data</a></li>
+<li class="chapter" data-level="8.2" data-path="revealing-trends-visualization-of-time-series-data.html"><a href="revealing-trends-visualization-of-time-series-data.html#multiple-time-series-data"><i class="fa fa-check"></i><b>8.2</b> Multiple time series data</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html"><i class="fa fa-check"></i><b>9</b> Seeing relationships: correlation, scatterplots and regression</a><ul>
+<li class="chapter" data-level="9.1" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html#scatter-plots-bubble-charts"><i class="fa fa-check"></i><b>9.1</b> Scatter plots, bubble charts</a></li>
+<li class="chapter" data-level="9.2" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html#density-plots-2d-bins-hex-bins-correlograms"><i class="fa fa-check"></i><b>9.2</b> Density plots, 2D bins, Hex bins, correlograms</a></li>
+<li class="chapter" data-level="9.3" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html#slope-graphs-and-parallel-line-plots"><i class="fa fa-check"></i><b>9.3</b> Slope graphs and parallel line plots</a></li>
+<li class="chapter" data-level="9.4" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html#plot-model-residuals"><i class="fa fa-check"></i><b>9.4</b> Plot model residuals</a></li>
+<li class="chapter" data-level="9.5" data-path="seeing-relationships-correlation-scatterplots-and-regression.html"><a href="seeing-relationships-correlation-scatterplots-and-regression.html#plot-model-predictions-and-uncertainty"><i class="fa fa-check"></i><b>9.5</b> Plot model predictions and uncertainty</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="visualization-of-spatial-information-maps.html"><a href="visualization-of-spatial-information-maps.html"><i class="fa fa-check"></i><b>10</b> Visualization of spatial information: maps</a><ul>
+<li class="chapter" data-level="10.1" data-path="visualization-of-spatial-information-maps.html"><a href="visualization-of-spatial-information-maps.html#projections-and-coordinate-systems"><i class="fa fa-check"></i><b>10.1</b> Projections and coordinate systems</a></li>
+<li class="chapter" data-level="10.2" data-path="visualization-of-spatial-information-maps.html"><a href="visualization-of-spatial-information-maps.html#vectorial-maps"><i class="fa fa-check"></i><b>10.2</b> Vectorial maps:</a></li>
+<li class="chapter" data-level="10.3" data-path="visualization-of-spatial-information-maps.html"><a href="visualization-of-spatial-information-maps.html#raster-maps"><i class="fa fa-check"></i><b>10.3</b> Raster maps</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html"><i class="fa fa-check"></i><b>11</b> Graphics for communication using ggplot</a><ul>
+<li class="chapter" data-level="11.1" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html#small-multiples-using-facet"><i class="fa fa-check"></i><b>11.1</b> ‘Small multiples’ using facet</a></li>
+<li class="chapter" data-level="11.2" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html#scales-and-zooming"><i class="fa fa-check"></i><b>11.2</b> Scales and zooming</a></li>
+<li class="chapter" data-level="11.3" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html#change-labels-axes-and-make-annotations"><i class="fa fa-check"></i><b>11.3</b> Change labels, axes and make annotations</a></li>
+<li class="chapter" data-level="11.4" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html#themes"><i class="fa fa-check"></i><b>11.4</b> Themes</a></li>
+<li class="chapter" data-level="11.5" data-path="graphics-for-communication-using-ggplot.html"><a href="graphics-for-communication-using-ggplot.html#saving-plots"><i class="fa fa-check"></i><b>11.5</b> Saving plots</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ST Data Management and Visualization with R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="fundamentals-of-data-visualization" class="section level1">
+<h1><span class="header-section-number">6</span> Fundamentals of data Visualization</h1>
+<div id="types-of-data-and-aesthetics" class="section level2">
+<h2><span class="header-section-number">6.1</span> Types of data and aesthetics</h2>
+</div>
+<div id="coordinate-systems-axes-and-colour-scales" class="section level2">
+<h2><span class="header-section-number">6.2</span> Coordinate systems, axes and colour scales</h2>
+</div>
+<div id="principles-of-figure-design" class="section level2">
+<h2><span class="header-section-number">6.3</span> Principles of figure design</h2>
+</div>
+<div id="how-ggplot-works" class="section level2">
+<h2><span class="header-section-number">6.4</span> How ggplot works</h2>
+</div>
+<div id="mapping-aesthetics" class="section level2">
+<h2><span class="header-section-number">6.5</span> Mapping aesthetics</h2>
+</div>
+<div id="directory-of-visualizations" class="section level2">
+<h2><span class="header-section-number">6.6</span> Directory of visualizations</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="program-in-r-within-the-tidyverse.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="visualizing-amounts-proportions-and-distributions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

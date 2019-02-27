@@ -1,0 +1,21 @@
+---
+title: "ST Data Management and Visualization with R"
+author: "Aitor Ameztegui - Marcos Rodrigues"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+---
+
+# (PART) Unit 2: Data Visualization {-}
+
+# Fundamentals of data Visualization
+
+## Types of data and aesthetics
+## Coordinate systems, axes and colour scales
+## Principles of figure design
+
+## How ggplot works
+## Mapping aesthetics
+## Directory of visualizations
+
