@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>111006: ST in Multi-scale Forest Dynamics Models on Multi-scales forest dynamics models</title>
+    <link>/</link>
+    <description>Recent content in 111006: ST in Multi-scale Forest Dynamics Models on Multi-scales forest dynamics models</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/syllabus/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/syllabus/</guid>
+      <description>Note: Due dates of exams and project will not move, however the timeline of topics and smaller assignments might be updated throughout the semester.  Date Lesson Slides Reading Lab HW Exam Project    Unit 1: Introduction         Wed, Jan 10 Introduction. Principles of modelling of forest dynamics         Thur, Jan 11 Journal Club          Unit 2: Types of models.</description>
+    </item>
+    
+    <item>
+      <title>Models</title>
+      <link>/models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/models/</guid>
+      <description>This is a list of the models that we will cover/mention during the lectures. The list is not comprehensive, and there are many models that we do not cover due to lack of time. For a more thorough list of available models, we suggest to check REF.
+Process-based models          Participation &amp;amp; application exercises 10%    SORTIE-ND 1996 Pacala et al.</description>
+    </item>
+    
+    <item>
+      <title>Policies</title>
+      <link>/policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/policies/</guid>
+      <description>Class: Class time is designed to be as interactive as possible. My role as instructor is to introduce you new tools and techniques, but it is up to you to take them and make use of them. Programming is a skill that is best learned by doing, so as much as possible you will be working on a variety of tasks and activities throughout each class.
+Diversity &amp;amp; Inclusiveness: It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students&#39; learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.</description>
+    </item>
+    
+  </channel>
+</rss>

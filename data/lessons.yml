@@ -1,0 +1,106 @@
+lessons:
+  - title: "Unit 1: Introduction"
+  - date: "Wed, Jan 10"
+    title: "Introduction. Principles of modelling of forest dynamics"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/svtSoIddYct8rRh
+  - date: "Thur, Jan 11"
+    title: "Journal Club"
+    reading: "journal_club_01.html"
+  
+  - title: "Unit 2: Types of models. Current trends in modelling of forest dynamics"
+  - date: "Thur, Jan 11"
+    title: "Types of models according to their functioning and scale"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/G82vzNAf01MaZUM
+    lab: https://unidisc.csuc.cat/oc-shib/index.php/s/MHtkMJ2AQUVUOQv
+  - date: "Thur, Jan 11"
+    title: "Current trends and needs in modelling"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/VOrzahNfUKiooXt
+  - date: "Thur, Jan 11"
+    title: "Definition of scenarios"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/ysSO9qbDMlg0blc
+  - date: "Thur, Jan 11"
+    title: "Journal Club"
+    reading: "journal_club_02.html"
+    
+  - title: "Unit 3. Growth and yield models"
+  - date: "Thur, Jan 11"
+    title: "Growth and yield models"
+    slides: "journal_club_03.html"
+    lab:  "lab.html"
+    
+  - title: "Unit 4. Process-based models"
+  - date: "Thur, Jan 11"
+    title: "Process-based models: 3-PG, Gotilwa, medfate, CAPSIS"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/pevEkgYdggh1uRn
+  - date: "Thur, Jan 11"
+    title: "Process-based models: GOTILWA"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/LIZ3wTrYO59TnBX
+  - date: "Thur, Jan 11"
+    title: "Seminar: medfate"
+    slides: "lab-slides/00-lab-deck.html"
+  - date: "Dec, 4th"
+    title: "Journal Club"
+    reading: "journal_club_04.html"
+  - date:  "Dec, 5th"
+    title: "Lab: 3-PG"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/M2Vs8eX2tI3HcmJ
+    lab: "lab-slides/00-lab-deck.html"
+    
+  - title: "Unit 5. Individual-based models"
+  - date: "Dec, 10th"
+    title: "Intro: JABOWA-FORET-ForCLIm-SORTIE"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/lyvq9Ii51komDF5
+  - date: "Dec, 12th"
+    title: "Lab: practice with SORTIE-ND"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/SugW6G023J1aRna
+    lab: "lab.html"    
+  - date: "Dec, 13th"
+    title: "Seminar: ForClim"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/xcRGDN8Rlqmam0A
+  - date: "Dec, 14th"
+    title:	"Journal club"
+    reading: "journal_club_05.html"
+  - title: "Unit 6. Landscape models"
+  - date: "Jan, 8th"
+    title: "Landscape models: LandClim, medfire, LandisPro"
+    slides: https://unidisc.csuc.cat/oc-shib/index.php/s/buXd9Ix9ypge3Vl
+  - date: "Jan, 10th"
+    title: "Seminar:medfire"
+    slides: "slides.html"
+  - date: "Jan, 12th"
+    title: "Lab: practice with iLand"
+    slides:  https://unidisc.csuc.cat/oc-shib/index.php/s/qR3yvZ451voieqe
+    lab: "lab.html"    
+  - date: "Jan, 14th"
+    title: "Journal club"
+    reading: "journal_club_06.html"
+    
+  - title: "Unit 7. Regional models"
+  - date: "Jan, 16th"
+    title: "Species distribution modelling"
+    slides: "slides.html"
+  - date: "Jan, 16th"
+    title: "Lab: Species distribution modelling"
+    slides: "slides.html"
+    lab: "slides.html"
+
+  - title: "Unit 8. Review and recap. Project presentation"
+  - date: "Fri, Apr 6"
+    title: "Review and recap. Final exam"
+    exam: "mt2.html"
+  - date: "Fri, Apr 6"
+    title: "Presentation practical work"
+    project: "project.html" 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1309 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" sizes="76x76" href="../img/favicon.png">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Multi-scales forest dynamics models</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
+
+	
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/material-kit.css" rel="stylesheet"/>
+</head>
+
+  
+<body class="profile-page">
+  	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	    	<div class="container">
+        	
+        	<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+            		<span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+        		</button>
+        		<a class="navbar-brand" href="../">Multi-scales forest dynamics models</a>
+        	</div>
+
+        	<div class="collapse navbar-collapse" id="navigation-example">
+        		<ul class="nav navbar-nav navbar-right">
+      
+        
+
+        <li class="nav-item">
+          <a href="../">
+            <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        
+      
+        
+
+        <li class="nav-item">
+          <a href="../syllabus">
+            <i class="material-icons">date_range</i>
+            <span>Syllabus</span>
+          </a>
+        </li>
+        
+      
+        
+
+        <li class="nav-item">
+          <a href="../models">
+            <i class='fa fa-code-fork fa-lg'></i>
+            <span>Models</span>
+          </a>
+        </li>
+        
+      
+        
+
+        <li class="nav-item">
+          <a href="../policies">
+            <i class="material-icons">gavel</i>
+            <span>Policies</span>
+          </a>
+        </li>
+        
+      
+        
+
+        <li class="nav-item">
+          <a href="https://github.com/ameztegui/">
+            <i class='fab fa-github fa-lg'></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        
+      
+        		</ul>
+        	</div>
+    	</div>
+    </nav>
+  <div class="wrapper">
+    <div class="header header-filter" style="background-image: url('http://www2.stat.duke.edu/courses/Spring18/Sta199/img/mugesketch.png');">
+    </div>
+		<div class="main main-raised">
+			<div class="container">
+		  	<div class="section text-left">
+		  	  <h2 class="title"></h2>
+	            <b>Note:</b> Due dates of exams and project will not move, however the timeline of topics and smaller assignments might be updated throughout the semester.
+
+<br><br>
+
+<table class="table" style="max-width:900px;margin-left:auto;margin-right:auto">
+  <tr>
+    <th style="width:15%;text-align:right">Date</th>
+    <th style="width:45%">Lesson</th>
+    <th style="width:5%;text-align:center">Slides</th>
+    <th style="width:5%;text-align:center">Reading</th>
+    <th style="width:5%;text-align:center">Lab</th>
+    <th style="width:5%;text-align:center">HW</th>
+    <th style="width:5%;text-align:center">Exam</th>
+    <th style="width:5%;text-align:center">Project</th>
+  </tr>
+
+  
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 1: Introduction</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Wed, Jan 10</td>
+      <td>Introduction. Principles of modelling of forest dynamics</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/svtSoIddYct8rRh">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Journal Club</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../reading/journal_club_01.html">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 2: Types of models. Current trends in modelling of forest dynamics</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Types of models according to their functioning and scale</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/G82vzNAf01MaZUM">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/https://unidisc.csuc.cat/oc-shib/index.php/s/MHtkMJ2AQUVUOQv">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Current trends and needs in modelling</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/VOrzahNfUKiooXt">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Definition of scenarios</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/ysSO9qbDMlg0blc">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Journal Club</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../reading/journal_club_02.html">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 3. Growth and yield models</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Growth and yield models</td>
+
+      
+      <td align="center"><a href="journal_club_03.html">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/lab.html">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 4. Process-based models</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Process-based models: 3-PG, Gotilwa, medfate, CAPSIS</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/pevEkgYdggh1uRn">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Process-based models: GOTILWA</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/LIZ3wTrYO59TnBX">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Thur, Jan 11</td>
+      <td>Seminar: medfate</td>
+
+      
+      <td align="center"><a href="lab-slides/00-lab-deck.html">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 4th</td>
+      <td>Journal Club</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../reading/journal_club_04.html">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 5th</td>
+      <td>Lab: 3-PG</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/M2Vs8eX2tI3HcmJ">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/lab-slides/00-lab-deck.html">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 5. Individual-based models</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 10th</td>
+      <td>Intro: JABOWA-FORET-ForCLIm-SORTIE</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/lyvq9Ii51komDF5">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 12th</td>
+      <td>Lab: practice with SORTIE-ND</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/SugW6G023J1aRna">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/lab.html">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 13th</td>
+      <td>Seminar: ForClim</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/xcRGDN8Rlqmam0A">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Dec, 14th</td>
+      <td>Journal club</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../reading/journal_club_05.html">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 6. Landscape models</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 8th</td>
+      <td>Landscape models: LandClim, medfire, LandisPro</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/buXd9Ix9ypge3Vl">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 10th</td>
+      <td>Seminar:medfire</td>
+
+      
+      <td align="center"><a href="slides.html">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 12th</td>
+      <td>Lab: practice with iLand</td>
+
+      
+      <td align="center"><a href="https://unidisc.csuc.cat/oc-shib/index.php/s/qR3yvZ451voieqe">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/lab.html">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 14th</td>
+      <td>Journal club</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../reading/journal_club_06.html">
+          <i class="fa fa-book fa-lg"></i></a></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 7. Regional models</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 16th</td>
+      <td>Species distribution modelling</td>
+
+      
+      <td align="center"><a href="slides.html">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Jan, 16th</td>
+      <td>Lab: Species distribution modelling</td>
+
+      
+      <td align="center"><a href="slides.html">
+          <i class="fa fa-laptop  fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../labs/slides.html">
+          <i class="fa fa-code fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right"></td>
+      <td>Unit 8. Review and recap. Project presentation</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Fri, Apr 6</td>
+      <td>Review and recap. Final exam</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+      <td align="center"><a href="../exam/mt2.html">
+          <i class="fa fa-check-square fa-lg"></i></a></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-file-powerpoint fa-lg"></i></font></td>
+      
+    </tr>
+    
+    <tr>
+      <td align="right">Fri, Apr 6</td>
+      <td>Presentation practical work</td>
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-laptop  fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-book fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-code fa-lg"></i></font></td>
+      
+      
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-pencil-square-o fa-lg"></i></font></td>
+      
+
+      
+        <td align="center"><font color="f1f1f1">
+          <i class="fa fa-check-square fa-lg"></i></font></td>
+      
+      
+      
+      <td align="center"><a href="../project/project.html">
+          <i class="fa fa-file-powerpoint fa-lg"></i></a></td>
+      
+    </tr>
+    
+  
+
+</table>
+
+	      </div>
+      </div>
+		</div>
+    <footer class="footer">
+  <div class="container">
+	  <nav class="pull-left">
+	    <ul>
+	    
+        
+
+        <li>
+          <a href="http://udl.cat/"><i class='fa fa-university fa-lg'></i> University of Lleida</a>
+        </li>
+        
+      
+        
+
+        <li>
+          <a href="https://rstudio.cloud/"><i class="icon-rlogo" style="font-size:150%"></i> RStudio</a>
+        </li>
+        
+      
+        
+
+        <li>
+          <a href="https://github.com/Sta199-S18/"><i class="button-icon fa fa-2x fa-github"></i> GitHub</a>
+        </li>
+        
+      
+        
+
+        <li>
+          <a href="../"> </a>
+        </li>
+        
+      
+      </ul>
+    </nav>
+	  <div class="copyright pull-right">
+	    <img src="../img/cc-by.svg"/>
+	  </div>
+  </div>
+</footer>
+	</div>
+</body>
+
+			
+
+	
+	<script src="../js/jquery.min.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/material.min.js"></script>
+
+	
+	<script src="../js/nouislider.min.js" type="text/javascript"></script>
+
+	
+	<script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	
+	<script src="../js/material-kit.js" type="text/javascript"></script>
+
+</html>
