@@ -1,0 +1,205 @@
+---
+title: "Lab 01: Types of models"
+author: ""
+date: "2019-09-01"
+output:
+  xaringan::moon_reader:
+    css: "lab-slides.css"
+    logo: img/sta199-hex.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+# For nonsese...
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+
+class: center, middle
+
+# Welcome to lab
+
+---
+
+class: center, middle
+
+# Lab strucuture
+
+---
+
+## Lab strucuture
+
+- Lab structure will vary depending on the session
+
+- It will often entail a 5-10 minute introduction 
+
+- Use the remaining time to work through the lab exercises and fill out the lab report
+
+- In other cases, we will go through the details of a particular model and make several pauses to do the exercises.
+
+- Lab instructions posted on the course website under `</>`
+    + Let's go find today's lab!
+    
+---
+
+## Tips
+
+- You do not have to finish the lab in class, they're due next week in lab. But you might choose to get through portions that you think will be challenging (which initially might be the coding component) in class when I can help you on the spot, and leave the narrative writing till later.
+
+- When working in teams, DO not split up lab amongst the team members, work on it together in its entirety.
+
+---
+
+class: center, middle
+
+# Lab 01 Types of models
+
+---
+
+## Goals
+
+The lab today will have two parts, with two different (but related) goals:
+
+1) Understand the main ways of classifying models of forest dynamics based on:
+    + The spatial scale
+    + The modelling approach
+    + The mathematical approach
+    + The time scale
+
+2) Discuss the main advantages, disadvantages and uses of the different model approaches, using real-world examples.
+
+---
+
+## Lab 1.1 Types of models
+
+
+We have seen how we can classify models based on several characteristics
+
+But reality is not always so clear...
+
+How would you classify the following models?
+
+
+---
+# Example 1
+![](img/lab01/recruitment_kernel.png)
+
+---
+
+##Your turn!
+
+Please fill the table for each of the following models, and then we will discuss the results together
+
+---
+![](img/lab01/netlogo.png)
+---
+![](img/lab01/fire_model.png)
+
+---
+
+![](img/lab01/gotilwa.png)
+
+---
+
+![](img/lab01/sdi_condes.png)
+
+---
+![](img/lab01/sortie_simus.png)
+
+---
+
+Time to discuss!!
+
+---
+
+Despite more or less rigid classifications, each model has advantages and limitations, and can be valid for different goals.
+
+So how to select the best model? 
+
+
+---
+
+Some things to consider when choosing a model
+
+- Required data
+- Inference space (spatial and temporal resolution)
+- Complexity
+- Flexibility
+
+---
+
+Lab02.
+Let's continue playing!
+
+What type of model would you choose if you were?
+---
+
+You are a private forest owner. You own a few hectares, and plant to sell the timber to help you pay an apartment. You have some inventory plots you did 5 year ago, and you want to know how much timber you can sell and how much money you could get.
+
+![](img/lab01/01b_forest_owner.png)
+
+---
+
+You work in a protected area in southern Europe as wildlife manager, and you are worried by how forest management can affect the habitat for capercaillie
+
+![](img/lab01/01b_capercaillie.png)
+
+---
+You are a forest ecologist trying to know if some relic forests in a mountain range near your home town will adapt to climate change
+
+![](img/lab01/01b_ecologist.png)
+
+---
+.pull-left[You work for the forest service. You want to know how much timber you can cut in the future in your Management Unit, and how this can affect forest structure and composition (also considering climate change)]
+
+.pull-right[![](img/lab01/01b_forest_service.png)]
+
+---
+You work for the EFI (European Forest Institute) and you want to assess changes in the surface of the main tree species across Europe between 2015 and 2100
+
+![](img/lab01/01b_efi.png)
+
+
+---
+You are a forest manager (you elaborate management plans for private owners) and you want to know when you should apply thinnings, and how intense they should be to maximize yield in one of the forests you manage.
+
+![](img/lab01/01b_forest_manager.png)
+
+---
+You have to design the firefighting strategy in Catalonia for the next 30 years. You want to know how much forest would burn, and how species composition would change, as a function of different firefighting strategies (total suppression, use of prescribed fires…)
+
+![](img/lab01/01b_firefighting.png)
+
+
+
+
+
+
+
+
+
+
+
+
