@@ -2,7 +2,12 @@
 @import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
 
 body {
-  font-family: 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-family: 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC',serif;
+}
+
+h1 {
+    font-size: 130%;
+      font-weight: 600;
 }
 
 .remark-code, .remark-inline-code {
@@ -81,7 +86,6 @@ body {
 }
 
 
-
 .title-slide {
   background-color: #23373B;
   border-top: 0 solid #23373B;
@@ -134,6 +138,13 @@ body {
   color: #FAFAFA;
   margin-left: 15px;
 }
+
+h1 {
+    font-size: 130%;
+      font-weight: 600;
+}
+
+
 
 .remark-slide-number {
   font-size: 13pt;
@@ -315,14 +326,26 @@ div.tweaked-header {
 }
 
 
-.pull-extleft {
+/* extreme pulling to sides */
+
+
+.pull-left-wide {
   float: left;
+  width: 65%;
+}
+
+.pull-left-wide_right {
+  float: right;
   width: 35%;
 }
 
-.pull-extleft_right {
+.pull-right-wide {
   float: right;
-  font-size: 82%;
+  width: 35%;
+}
+
+.pull-right-wide-left {
+  float: left;
   width: 65%;
 }
 
