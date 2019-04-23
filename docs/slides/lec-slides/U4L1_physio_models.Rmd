@@ -1,0 +1,200 @@
+---
+title: "Physiological, mechanistic or process-based models"
+author: "Aitor Ameztegui"
+institute: "University of Lleida"
+date: "2018-01-22"
+output:
+  xaringan::moon_reader:
+    css: [default, "slides.css"]
+    logo: 
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+
+
+```
+# What is an eco-physiological model?
+
+## *also called physiological, mechanistic or process-based 
+
+1. Ecophysiology is the study of how the environment, both physical and biological, interacts with the physiology of an organism.
+
+2. PB models usually go one step further and try to relate physiology with some measure of performance (growth, biomass, etc.)
+
+
+
+---
+
+# What is an eco-physiological model?
+
+## *also called physiological, mechanistic or process-based 
+
+1. Ecophysiology is the study of how the environment, both physical and biological, interacts with the physiology of an organism.
+
+
+2. PB models usually go one step further and try to relate physiology with some measure of performance (growth, biomass, etc.)
+
+3. .content-box-yellow[So a PB model could be defined as a model that relates changes in the environment to the performance of an organism or population, through the knowledge of their effects on physiology]
+
+---
+# Why haven’t they been more used?
+
+.left[.footnote[From Landsberg, 2003]]
+
+1. Foresters tend to be **practical people**, and those who manage forests for wood production usually want models that provide them with **information of practical value**
+
+2. These requirements are **generally met by empirical growth and yield models**, based on measurements made on sample plots. Empirical models have served foresters well.
+
+3. However, empirical models are generally site-specific and often depend on the logically circular concept of site index. Models based on measurements **lack flexibility** and the capacity to simulate the results of **environmental stresses**
+
+4. Foresters have tended to consider the details of tree physiology **irrelevant** to forest management, and physiologically-based (process) models as entirely different and completely separate from the familiar empirical growth models.
+
+---
+# Why haven’t they been more used? (2)
+
+.left[.footnote[From Landsberg, 2003]]
+<ol start="5">
+<li> Very few forestry schools provide more than cursory background courses in **tree physiology**, and even fewer, if any, provide courses in physiological, **process-based modelling.** 
+</li>
+</br>
+<li>We have to acknowledge that process-based models have not, in most cases, produced **outputs that have been of any interest** to foresters</li>
+</br>
+<li>They have also, in many cases, been **published in journals** that are not likely to be on the reading lists of those concerned with management.</li>
+
+</ol>
+</br>
+
+####.center[**But there is an increased interest by managers on mechanistic models and an increase acknowledgement by modellers on the need to provide output valuable for forest management**]
+
+---
+
+# History of process-based models
+
+![](img/u4/history2.png)
+---
+
+# History of process-based models
+
+![](img/u4/history3.png)
+---
+
+# History of process-based models
+
+![](img/u4/history4.png)
+---
+
+# History of process-based models
+
+![](img/u4/history5.png)
+
+---
+
+# History of process-based models
+
+![](img/u4/history6.png)
+---
+
+# History of process-based models
+
+![](img/u4/history7.png)
+---
+
+# History of process-based models
+
+![](img/u4/history8.png)
+---
+
+# History of process-based models
+
+![](img/u4/history9.png)
+---
+
+# History of process-based models
+
+![](img/u4/history10.png)
+---
+# History of process-based models
+
+![](img/u4/history11.png)
+---
+
+# History of process-based models
+
+![](img/u4/history12.png)
+
+---
+
+# Physiology of process-based models
+
+.center[![](img/u4/equation01.png)]
+
+---
+
+# Physiology of process-based models
+
+
+.center[![](img/u4/equation02.png)]
+
+---
+
+# Physiology of process-based models
+
+
+
+.center[![](img/u4/equation03.png)]
+
+---
+
+# Physiology of process-based models
+
+
+.center[![](img/u4/equation04.png)]
+
+---
+
+# Physiology of process-based models
+
+
+.center[![](img/u4/equation05.png)]
+
+
+---
+
+# Physiology of process-based models
+
+.center[![](img/u4/equation06.png)]
+
+---
+
+# Examples of mechanistic models
+
+
+.center[![](img/u4/physio_models.png)]
