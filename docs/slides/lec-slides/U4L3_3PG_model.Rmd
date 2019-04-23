@@ -1,0 +1,155 @@
+---
+title: "Physiological Principles Predict Growth (3PG)"
+author: "Aitor Ameztegui"
+institute: "University of Lleida"
+date: "2018-01-22"
+output:
+  xaringan::moon_reader:
+    css: [default, "slides.css"]
+    logo: 
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+
+
+```
+
+
+# Model 3-PG: Introduction
+
+.pull-left[
+.footnote[Landsberg & Waring, 1997, ForEco]
+![](img/U4/3pg/paper_Landsberg.png)
+]
+
+.pull-right[
+.center[.footnote[http://3pg.forestry.ubc.ca/]]
+![](img/U4/3pg/web_3pg.png)
+]
+
+---
+.pull-left[
+.footnote[Island Press, 2014]
+![](img/U4/3pg/book_Landsberg.png)
+]
+
+.pull-right[
+.center[.footnote[Academic Press 2011]]
+![](img/U4/3pg/book2.png)]
+
+---
+# Download 3-PG
+![](img/U4/3pg/3pg_spatial.png)]
+![](img/U4/3pg/3pg_excel.png)]
+![](img/U4/3pg/3pg_mix.png)]
+
+---
+# Model 3-PG: Introduction
+
+- A tree growth model based on Physiological Principles that Predict Growth
+- Bridges gap between mensuration-based growth & yield models and process-based, C-balance models 
+- Provides dynamic predictions of biomass pools, stand attributes, stocking and soil water usage
+- Applicable under changing conditions, “at the edges”,  and to novel situations
+- Maintains an admirable level of simplicity (at least reasonable)
+
+---
+# Model 3-PG: Introduction
+![](img/U4/3pg/biomes_3pg.png)]
+
+---
+# Model 3-PG: Introduction
+![](img/U4/3pg/biomes_3pg_but.png)]
+
+---
+# Comparison with empirical models
+
+.pull-left[
+### Advantages
+- based on wide range of conditions
+- applicable under changing conditions,“at the edges”, to novel situations
+- provides explanation, aids understanding
+
+### Disadvantages
+- not as widely understood as empirical growth models
+- not necessarily as accurate, either
+- can require data not readily available
+- not suitable for mixed forests
+- works better with even-aged forests
+]
+
+.pull-right[
+.right[![](img/U4/3pg/compare_empirical.png)]
+]
+
+---
+
+# Things to consider about a model
+
+### Temporal and spatial scale
+### State variables
+A state variable is one of the set of variables that are used to describe the mathematical "state" of a dynamical system. Intuitively, the state of a system describes enough about the system to determine its future behaviour in the absence of any external forces affecting the system
+
+### Inputs
+### Data availability
+### Outputs
+
+---
+
+# A quick summary of 3-PG
+![](img/U4/3PG/3pg_summary.png)
+
+---
+# Input data
+
+.pull-extleft[
+
+.h4[Climate data]
+- monthly mean temperature, radiation, rainfall, VPD
+- observed or long-term average data
+
+.h4[Site & Soil descriptors]
+- latitude
+- soil texture & water capacity
+- fertility rating
+
+.h4[Stand initialisation data]
+- foliage, stem & root biomass
+- stocking
+- available soil water
+]
+
+.pull-extleft_right[![](img/U4/3pg/3pg_inputs.png)]
+
+
+
+
+
+
