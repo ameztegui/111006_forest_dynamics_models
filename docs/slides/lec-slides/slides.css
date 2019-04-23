@@ -5,10 +5,6 @@ body {
   font-family: 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC',serif;
 }
 
-h1 {
-    font-size: 130%;
-      font-weight: 600;
-}
 
 .remark-code, .remark-inline-code {
   font-family: 'Fira Code', 'Lucida Console', Monaco, monospace;
@@ -52,7 +48,7 @@ h1 {
 .remark-slide-content > h1 {
   font-family: 'Fira Sans';
   font-weight: normal;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: -95px;
   margin-left: -00px;
   color: #FAFAFA;
@@ -75,16 +71,34 @@ h1 {
   padding-bottom: 00px;
   color: #1A292C;
   text-shadow: none;
-  font-weight: 400;
   text-align: left;
   margin-left: 00px;
   margin-bottom: -10px;
 }
 
-.remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
+.remark-slide-content > h2, .pull-left > h2, .pull-extleft > h2, .pull-right > h2,
+.pull-left-wide > h2, .pull-left-wide_right > h2,
+.pull-right-wide > h2, .pull-right-wide-left > h2 {
   font-size: 35px;
+  font-weight: 400;
+
 }
 
+.remark-slide-content > h3, .pull-left > h3, .pull-extleft > h3, .pull-right > h3,
+.pull-left-wide > h3, .pull-left-wide-right > h3,
+.pull-right-wide > h3, .pull-right-wide-left > h3{
+  font-size: 30px;
+  font-weight: 300;
+
+}
+
+.remark-slide-content > h4, .pull-left > h4, .pull-extleft > h4, .pull-right > h4,
+.pull-left-wide > h4, .pull-left-wide-right > h4,
+.pull-right-wide > h4, .pull-right-wide-left > h4{
+  font-size: 25px;
+  font-weight: 300;
+
+}
 
 .title-slide {
   background-color: #23373B;
@@ -334,19 +348,19 @@ div.tweaked-header {
   width: 65%;
 }
 
-.pull-left-wide_right {
+.pull-left-wide-right {
   float: right;
   width: 35%;
 }
 
 .pull-right-wide {
   float: right;
-  width: 35%;
+  width: 65%;
 }
 
 .pull-right-wide-left {
   float: left;
-  width: 65%;
+  width: 35%;
 }
 
 /************************************

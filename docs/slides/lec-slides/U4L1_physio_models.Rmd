@@ -78,21 +78,20 @@ color_palette <- list(gray = "#999999",
 4. Foresters have tended to consider the details of tree physiology **irrelevant** to forest management, and physiologically-based (process) models as entirely different and completely separate from the familiar empirical growth models.
 
 ---
-# Why haven’t they been more used? (2)
+# Why haven't they been more used? (2)
 
 .left[.footnote[From Landsberg, 2003]]
-<ol start="5">
-<li> Very few forestry schools provide more than cursory background courses in **tree physiology**, and even fewer, if any, provide courses in physiological, **process-based modelling.** 
-</li>
-</br>
-<li>We have to acknowledge that process-based models have not, in most cases, produced **outputs that have been of any interest** to foresters</li>
-</br>
-<li>They have also, in many cases, been **published in journals** that are not likely to be on the reading lists of those concerned with management.</li>
+5. Very few forestry schools provide more than cursory background courses in **tree physiology**, and even fewer, if any, provide courses in physiological, **process-based modelling.** 
 
-</ol>
-</br>
+6. We have to acknowledge that process-based models have not, in most cases, produced **outputs that have been of any interest** to foresters
 
-####.center[**But there is an increased interest by managers on mechanistic models and an increase acknowledgement by modellers on the need to provide output valuable for forest management**]
+7. They have also, in many cases, been **published in journals** that are not likely to be on the reading lists of those concerned with management.
+</br>
+</br>
+</br>
+--
+
+.center[.font120[**But there is an increased interest by managers on mechanistic models and an increase acknowledgement by modellers on the need to provide output valuable for forest management**]]
 
 ---
 

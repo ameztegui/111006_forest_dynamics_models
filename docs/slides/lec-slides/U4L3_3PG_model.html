@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html>
   <head>
     <title>Physiological Principles Predict Growth (3PG)</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="author" content="Aitor Ameztegui" />
     <meta name="date" content="2018-01-22" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -54,11 +54,15 @@ class: center, middle, inverse, title-slide
 
 ---
 # Model 3-PG: Introduction
-
+&lt;/br&gt;
 - A tree growth model based on Physiological Principles that Predict Growth
+
 - Bridges gap between mensuration-based growth &amp; yield models and process-based, C-balance models 
+
 - Provides dynamic predictions of biomass pools, stand attributes, stocking and soil water usage
-- Applicable under changing conditions, “at the edges”,  and to novel situations
+
+- Applicable under changing conditions, "at the edges",  and to novel situations
+
 - Maintains an admirable level of simplicity (at least reasonable)
 
 ---
@@ -75,16 +79,16 @@ class: center, middle, inverse, title-slide
 .pull-left[
 ### Advantages
 - based on wide range of conditions
-- applicable under changing conditions,“at the edges”, to novel situations
+- applicable under changing conditions,*at the edges*, to novel situations
 - provides explanation, aids understanding
+
 
 ### Disadvantages
 - not as widely understood as empirical growth models
 - not necessarily as accurate, either
 - can require data not readily available
 - not suitable for mixed forests
-- works better with even-aged forests
-]
+- works better with even-aged forests]
 
 .pull-right[
 .right[![](img/U4/3pg/compare_empirical.png)]
@@ -95,12 +99,12 @@ class: center, middle, inverse, title-slide
 # Things to consider about a model
 
 ### Temporal and spatial scale
-### State variables
-A state variable is one of the set of variables that are used to describe the mathematical "state" of a dynamical system. Intuitively, the state of a system describes enough about the system to determine its future behaviour in the absence of any external forces affecting the system
-
+### State variables*
 ### Inputs
 ### Data availability
 ### Outputs
+--
+.left[.footnote[*A state variable is one of the set of variables that are used to describe the mathematical "state" of a dynamical system. Intuitively, the state of a system describes enough about the system to determine its future behaviour in the absence of any external forces affecting the system]]
 
 ---
 
@@ -110,24 +114,62 @@ A state variable is one of the set of variables that are used to describe the ma
 ---
 # Input data
 
-.pull-extleft[
+.pull-left-wide[
 
-.h4[Climate data]
+###Climate data
 - monthly mean temperature, radiation, rainfall, VPD
 - observed or long-term average data
 
-.h4[Site &amp; Soil descriptors]
+###Site &amp; Soil descriptors
 - latitude
 - soil texture &amp; water capacity
 - fertility rating
 
-.h4[Stand initialisation data]
+###Stand initialisation data
 - foliage, stem &amp; root biomass
 - stocking
 - available soil water
 ]
 
-.pull-extleft_right[![](img/U4/3pg/3pg_inputs.png)]
+.pull-left-wide-right[![](img/U4/3pg/3pg_inputs.png)]
+
+---
+
+background-image:url("img/U4/3pg/3pg_conceptual.png")
+# Conceptual model of forest growth
+
+---
+# Main components of 3-PG
+
+&lt;/br&gt;
+.font120[
+- **Production of biomass:** environmental modification of light use efficiency; constant ratio of NPP to GPP
+
+- **Biomass allocation:** affected by growing conditions and tree size
+
+- **Stem mortality:** probability of death; self-thinning
+
+- **Soil water balance:** single soil layer model; evapo-transpiration determined from Penman-Monteith equation
+
+- **Stand properties:** from biomass pools and assumptions about specific leaf area, branch+bark fraction, and wood density
+]
+
+---
+
+background-image:url("img/U4/3pg/3pg_conceptual.png")
+# Conceptual model of forest growth
+
+---
+# Causal loop in 3-PG
+
+![](img/U4/3pg/3pg_process.png)
+---
+
+# 3-PG is a carbon balance model
+.footnote[McMurtrie &amp; Wolf (1983) model]
+.pull-right-wide-left[radiation is intercepted by the canopy
+converted to assimilates]
+![](img/U4/3pg/3pg_process_carbon balance.png)
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
@@ -138,42 +180,16 @@ A state variable is one of the set of variables that are used to describe the ma
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);</script>
+})();</script>
 
 <script>
 (function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
+  var i, text, code, codes = document.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -187,8 +203,7 @@ slideshow._releaseMath = function(el) {
     }
     i++;
   }
-};
-slideshow._releaseMath(document);
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

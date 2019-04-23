@@ -73,11 +73,15 @@ color_palette <- list(gray = "#999999",
 
 ---
 # Model 3-PG: Introduction
-
+</br>
 - A tree growth model based on Physiological Principles that Predict Growth
+
 - Bridges gap between mensuration-based growth & yield models and process-based, C-balance models 
+
 - Provides dynamic predictions of biomass pools, stand attributes, stocking and soil water usage
-- Applicable under changing conditions, “at the edges”,  and to novel situations
+
+- Applicable under changing conditions, "at the edges",  and to novel situations
+
 - Maintains an admirable level of simplicity (at least reasonable)
 
 ---
@@ -94,16 +98,16 @@ color_palette <- list(gray = "#999999",
 .pull-left[
 ### Advantages
 - based on wide range of conditions
-- applicable under changing conditions,“at the edges”, to novel situations
+- applicable under changing conditions,*at the edges*, to novel situations
 - provides explanation, aids understanding
+
 
 ### Disadvantages
 - not as widely understood as empirical growth models
 - not necessarily as accurate, either
 - can require data not readily available
 - not suitable for mixed forests
-- works better with even-aged forests
-]
+- works better with even-aged forests]
 
 .pull-right[
 .right[![](img/U4/3pg/compare_empirical.png)]
@@ -114,12 +118,12 @@ color_palette <- list(gray = "#999999",
 # Things to consider about a model
 
 ### Temporal and spatial scale
-### State variables
-A state variable is one of the set of variables that are used to describe the mathematical "state" of a dynamical system. Intuitively, the state of a system describes enough about the system to determine its future behaviour in the absence of any external forces affecting the system
-
+### State variables*
 ### Inputs
 ### Data availability
 ### Outputs
+--
+.left[.footnote[*A state variable is one of the set of variables that are used to describe the mathematical "state" of a dynamical system. Intuitively, the state of a system describes enough about the system to determine its future behaviour in the absence of any external forces affecting the system]]
 
 ---
 
@@ -129,27 +133,59 @@ A state variable is one of the set of variables that are used to describe the ma
 ---
 # Input data
 
-.pull-extleft[
+.pull-left-wide[
 
-.h4[Climate data]
+###Climate data
 - monthly mean temperature, radiation, rainfall, VPD
 - observed or long-term average data
 
-.h4[Site & Soil descriptors]
+###Site & Soil descriptors
 - latitude
 - soil texture & water capacity
 - fertility rating
 
-.h4[Stand initialisation data]
+###Stand initialisation data
 - foliage, stem & root biomass
 - stocking
 - available soil water
 ]
 
-.pull-extleft_right[![](img/U4/3pg/3pg_inputs.png)]
+.pull-left-wide-right[![](img/U4/3pg/3pg_inputs.png)]
 
+---
 
+background-image:url("img/U4/3pg/3pg_conceptual.png")
+# Conceptual model of forest growth
 
+---
+# Main components of 3-PG
 
+</br>
+.font120[
+- **Production of biomass:** environmental modification of light use efficiency; constant ratio of NPP to GPP
 
+- **Biomass allocation:** affected by growing conditions and tree size
 
+- **Stem mortality:** probability of death; self-thinning
+
+- **Soil water balance:** single soil layer model; evapo-transpiration determined from Penman-Monteith equation
+
+- **Stand properties:** from biomass pools and assumptions about specific leaf area, branch+bark fraction, and wood density
+]
+
+---
+
+background-image:url("img/U4/3pg/3pg_conceptual.png")
+# Conceptual model of forest growth
+
+---
+# Causal loop in 3-PG
+
+![](img/U4/3pg/3pg_process.png)
+---
+
+# 3-PG is a carbon balance model
+.footnote[McMurtrie & Wolf (1983) model]
+.pull-right-wide-left[radiation is intercepted by the canopy
+converted to assimilates]
+![](img/U4/3pg/3pg_process_carbon balance.png)

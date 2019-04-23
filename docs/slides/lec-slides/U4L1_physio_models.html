@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html>
   <head>
     <title>Physiological, mechanistic or process-based models</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="author" content="Aitor Ameztegui" />
     <meta name="date" content="2018-01-22" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -59,21 +59,20 @@ class: center, middle, inverse, title-slide
 4. Foresters have tended to consider the details of tree physiology **irrelevant** to forest management, and physiologically-based (process) models as entirely different and completely separate from the familiar empirical growth models.
 
 ---
-# Why haven’t they been more used? (2)
+# Why haven't they been more used? (2)
 
 .left[.footnote[From Landsberg, 2003]]
-&lt;ol start="5"&gt;
-&lt;li&gt; Very few forestry schools provide more than cursory background courses in **tree physiology**, and even fewer, if any, provide courses in physiological, **process-based modelling.** 
-&lt;/li&gt;
-&lt;/br&gt;
-&lt;li&gt;We have to acknowledge that process-based models have not, in most cases, produced **outputs that have been of any interest** to foresters&lt;/li&gt;
-&lt;/br&gt;
-&lt;li&gt;They have also, in many cases, been **published in journals** that are not likely to be on the reading lists of those concerned with management.&lt;/li&gt;
+5. Very few forestry schools provide more than cursory background courses in **tree physiology**, and even fewer, if any, provide courses in physiological, **process-based modelling.** 
 
-&lt;/ol&gt;
-&lt;/br&gt;
+6. We have to acknowledge that process-based models have not, in most cases, produced **outputs that have been of any interest** to foresters
 
-####.center[**But there is an increased interest by managers on mechanistic models and an increase acknowledgement by modellers on the need to provide output valuable for forest management**]
+7. They have also, in many cases, been **published in journals** that are not likely to be on the reading lists of those concerned with management.
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+--
+
+.center[.font120[**But there is an increased interest by managers on mechanistic models and an increase acknowledgement by modellers on the need to provide output valuable for forest management**]]
 
 ---
 
@@ -189,42 +188,16 @@ class: center, middle, inverse, title-slide
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);</script>
+})();</script>
 
 <script>
 (function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
+  var i, text, code, codes = document.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -238,8 +211,7 @@ slideshow._releaseMath = function(el) {
     }
     i++;
   }
-};
-slideshow._releaseMath(document);
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

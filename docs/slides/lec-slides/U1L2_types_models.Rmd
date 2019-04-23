@@ -73,7 +73,7 @@ color_palette <- list(gray = "#999999",
 ---
 ## Models can be used for different purposes...*
 
-
+</br>
 1. Synthesize existing knowledge
 
 2. Forecast future conditions
@@ -92,10 +92,12 @@ color_palette <- list(gray = "#999999",
 .pull-left[
 
 ####- Based on the modelled process
-
+</br>
 ####- Based on the working scale
+</br>
 
 ####- Based on the modelling approach
+</br>
 
 ####- Based on the mathematical approach
 ]
