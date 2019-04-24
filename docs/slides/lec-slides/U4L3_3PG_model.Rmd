@@ -8,6 +8,8 @@ output:
     css: [default, "slides.css"]
     logo: 
     lib_dir: libs
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+
     nature:
       highlightStyle: github
       highlightLines: true
@@ -90,7 +92,7 @@ color_palette <- list(gray = "#999999",
 
 ---
 # Model 3-PG: Introduction
-![](img/U4/3pg/biomes_3pg_but.png)]
+![](img/U4/3pg/biomes_3pg_but.png)
 
 ---
 # Comparison with empirical models
@@ -179,9 +181,10 @@ background-image:url("img/U4/3pg/3pg_conceptual.png")
 # Conceptual model of forest growth
 
 ---
+class: full-screen
+background-image:url("img/U4/3pg/3pg_process.png")
 # Causal loop in 3-PG
 
-![](img/U4/3pg/3pg_process.png)
 ---
 
 class:full-screen
@@ -189,6 +192,7 @@ background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 # 3-PG is a carbon balance model
 .tri-col-right[
 </br></br></br></br></br></br></br></br>
+
 * radiation is intercepted by the canopy
 * converted to assimilates
 ]
@@ -203,9 +207,16 @@ background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 .footnote[McMurtrie & Wolf (1983) model]
 ---
 
+class:full-screen
+background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 # 3-PG is a carbon balance model
+.tri-col-right[
+</br></br></br></br></br></br></br></br>
+
+* radiation is intercepted by the canopy
+]
+
 .footnote[McMurtrie & Wolf (1983) model]
-![](img/U4/3pg/3pg_process_carbon balance_text2.png)
 
 ---
 
@@ -225,10 +236,18 @@ LAI determined by SLA and foliage biomass
 ]
 
 ---
-
+class:full-screen
+background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 # 3-PG is a carbon balance model
+.tri-col-right[
+</br></br></br></br></br></br></br></br>
+
+* .gray[radiation is intercepted by the canopy]
+* converted to assimilates
+]
+
+]
 .footnote[McMurtrie & Wolf (1983) model]
-![](img/U4/3pg/3pg_process_carbon balance_text3.png)
 ---
 # Production & Solar radiation
 
@@ -277,9 +296,12 @@ layout: false
 ---
 
 class: full-screen
-background-image:url("img/U4/3pg/3pg_process_carbon balance_text4.png")
+background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 # Allocation: Biomass partitioning
-
+.tri-col-left[
+</br></br></br></br></br></br></br></br></br></br>
+* allocated to foliage, stem & roots
+* lost to respiration, litterfall & root turnover]
 ---
 # Allocation: Biomass partitioning
 
@@ -344,7 +366,7 @@ Above-ground allocation is based on foliage:stem partitioning ratio
 $$\rho_{FS} = \frac{\eta_F}{\eta_S} = a_pB^{n_p}$$
 Increasing DBH decreases foliage allocation and increases stem allocation. 
 
-![](img/U4/3pg/3pg_allocation_foliage.png)
+.center[![](img/U4/3pg/3pg_allocation_foliage.png)]
 .footnote[Waring et al 2016, For Ecol Manage]
 
 ---
@@ -387,36 +409,251 @@ Site & environmental factors affect growth via simple empirical modifiers
 
 # Site and environmental effects
 
+.center[![](img/U4/3pg/NPP_formula.png)]
+
+.center[![](img/U4/3pg/NPP_factors.png)]
+
 ---
 # Growth modifiers
+Each environmental factor is represented by a growth modifier, i.e. a function of the factor which varies between 0 (total limitation) and 1 (no limitation).
+
+.center[![](img/U4/3pg/3pg_gm.png)]
 
 ---
 
 # Growth modifiers
+
 ## Temperature growth modifier
+
+.center[![](img/U4/3pg/3pg_gm_temp_form.png)]
+
+.pull-left[
+where:
+
+* $T_a$	= mean monthly daily temp.
+* $T_{min}$	= minimum temp. for growth
+* $T_{opt}$	= optimum temp. for growth
+* $T_{max}$	= maximum temp. for growth]
+
+.pull-right[![](img/U4/3pg/3pg_gm_temp_chart.png)]
 
 ---
 # Growth modifiers
 ## Frost growth modifier
 
+.font120[$$f_F(d_F) = 1- k_F(\frac{d_f}{30})$$]
+
+.pull-left[
+where:
+
+* $d_F$ = number of frosty days in month
+* $k_F$ = number of days of production lost for each day of frost
+]
+
+.pull-right[![](img/U4/3pg/3pg_gm_frost_chart.png)]
 ---
 # Growth modifiers
 ## Soil water growth modifier
+
+.font120[
+$$f_\theta(\theta) = \frac{1}{1+[(1-\theta/\theta_x)/c_\theta]^{n_\theta}}$$]
+
+
+.pull-left[
+where
+
+* $\theta$  = current available soil water
+* $\theta_x$ = maximum available soil water 
+* $c_\theta$ = relative water deficit for 50% reduction.
+* $n_\theta$ = power determining shape of soil water response
+]
+
+.pull-right[![](img/U4/3pg/3pg_gm_soil_chart.png)]
 
 ---
 # Growth modifiers
 ## VPD growth modifier
 
+.font120[$$f_D(D) = e^{-k_DD}$$]
+
+.pull-left[
+where:
+
+* $d_F$ = number of frosty days in month
+* $k_F$ = number of days of production lost for each day of frost
+]
+
+.pull-right[![](img/U4/3pg/3pg_gm_vpd_chart.png)]
+
 ---
 # Growth modifiers
 ## Age-related growth modifier
 
+.font120[$$f_{age}(t)=\frac{1}{1+(t/r_{age}t_x)^{n_{age}}}]$$]
+.pull-left[
+where:
+
+* $t$ = current stand age
+* $t_x$ = likely max. stand age
+* $r_age$ = relative stand age for 50% growth reduction
+* $n_age$ = power determining strength of growth reduction
+]
+
+.pull-right[![](img/U4/3pg/3pg_gm_age_chart.png)]
 ---
 # Growth modifiers
 ## CO2 growth modifier
 
+
+.center[![](img/U4/3pg/3pg_gm_co2_form.png)]
+
+.pull-left[
+where:
+
+* $CO_2$ = current CO2 level
+* $fCalpha_{700}$  = growth at 700 ppm]
+
+
+.pull-right[![](img/U4/3pg/3pg_gm_co2_chart.png)]
+
+
 ---
 # Growth modifiers
 
+Each environmental factor is represented by a growth modifier, i.e. a function of the factor which varies between 0 (total limitation) and 1 (no limitation).
 
+.center[![](img/U4/3pg/3pg_gm.png)]
+
+---
+
+class: middle, inverse
+layout: false
+
+# Your turn!
+<iframe src="https://giphy.com/embed/13awhIC2CcDaHC" width="480" height="336" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+---
+class: full-screen
+background-image:url("img/U4/3pg/3pg_process_swb.png")
+
+# Soil water balance
+</br>
+Soil water balance via simple single layer model
+.pull-left-wide-right[
+</br></br></br></br></br></br>
+* canopy conductance scaled for canopy LAI
+* and affected by VPD and soil water
+* ET driven by radiation (using a Penman-Montieth equation)
+* feedback from soil water status into growth modifiers
+]
+
+---
+# Soil water balance
+
+* Soil water balance model has a single soil-layer
+
+* Simple monthly balance between rainfall, irrigation and evapotranspiration
+
+.pull-left[
+$$W_+ = max{W_x, W + R + I - E_T}$$
+
+* Excess over maximum storage lost as runoff or drainage
+
+* Canopy intercepts a % of rainfall and depends on LAI up to a maximum
+]
+
+.pull-right[![](img/U4/water_balance.png)]
+
+---
+# Soil water balance
+
+Evapotranspiration determined from a Penman-Monteith equation and canopy conductance
+
+.pull-left[
+* driven by incident solar radiation
+* driven by LAI through canopy conductance
+* conductance affected by site & environmental factors through growth modifiers]
+
+.pull-right[![](img/U4/penman.png)]
+
+---
+
+class: full-screen
+background-image:url("img/U4/3pg/3pg_process_all.png")
+
+# Stocking and mortality
+</br>
+Stocking an essential component of 3-PG as it affects allocation through stand-mean DBH
+
+.pull-left-wide-right[
+</br>
+* mortality model very simple-minded
+* probability of death age & (potentially) stress related
+* density dependent mortality implemented via self-thinning law
+]
+
+---
+# Calculation of stem volume
+
+.pull-left[
+.font120[* Stem volume calculated either from
+    + allometric relationship w.r.t stand DBH, 
+    + or from density using]]
+
+.pull-right[![](img/U4/m3.png)]
+    
+$V = (1 - \rho BB)W_S/\rho)$
+
+.font120[where $\rho BB$ is fraction of stem biomass in branch and bark and $\rho$ is stem density
+
+* Note that $\rho BB$ and $\rho$ can vary widely across a site and calculation of stem volume from WS can be error prone.]
+
+---
+class: full-screen
+background-image: url("img/U4/3pg/stem_volume.png")
+# Stem volume and mass, DBH
+
+### 3-PG assumes even-aged stands, no variation in tree diameter
+
+---
+
+# Newer versions
+
+---
+# Modelling mortality: density-independent 
+
+.pull-left-wide[Two types of mortality:
++ density independent
++ density dependent or self thinning
+
+
+#### Density-independent mortality
+* due to random or stress-related effects
+* modelled by probability of death $\gamma N$ so that
+$$\Delta N = - \gamma N * N$$
+* potentially age and stress related
+* $\gamma N$ increased in times of stress, e.g. in response to low long-term average $f_0$	
+]
+
+.pull-left-wide-right[![](img/U4/mort_tree.png)]
+
+---
+# Modelling mortality: density-dependent 
+
+#### Density dependent mortality
+* Self thinning-line gives maximum single-tree stem mass (kg/tree) at current stocking
+
+$$\omega_{Sx}(N) = \omega_{Sx0}(1000/N)^{3/2}$$
+
+where $\omega_{Sx0}$ is max. stem mass at 1000 trees ha-1
+
+.pull-left[* When $\omega_S > \omega_{Sx}(N)$, stocking is reduced. 
+
+Thus:
+
+at 1: no mortality
+
+at 2: mortality reduces population to 2']
+
+.pull-right[![](img/U4/self_thinning.png)]
 
