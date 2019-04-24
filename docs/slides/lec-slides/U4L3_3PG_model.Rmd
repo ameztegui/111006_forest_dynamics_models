@@ -285,6 +285,89 @@ Thus:
 $$\Delta W_F = \eta_F P_n - \gamma_F W_F$$
 $$\Delta W_R = \eta_R P_n - \gamma_R W_R$$
 $$\Delta W_S = \eta_S P_n $$
+---
+
+# Allocation in 3-PG
+
+A simple-minded approach reproduces well-established responses to site conditions
+
+.pull-left-wide[![](img/U4/3pg/3pg_allocation.png)]
+.pull-left-wide-right[.font110[* root allocation determined by fertility & available soil water (ASW) -->
+poor conditions favour below-ground growth
+
+* foliage:stem allocation determined by tree size --> large trees have more allocation to stem wood]]
+
+</br>
+</br>
+
+.center[Dynamic changes in allocation typically observed in thinning or pruning responses are not reproduced because allocation depends on tree size]
+
+
+---
+
+# Root allocation
+
+Root allocation affected by growth conditions and by soil fertility
+
+.pull-left[
+$$\eta_R = \frac{\eta_{Rx}·\eta_{Rn}}{\eta_{Rn}+(\eta_{Rx}-\eta_{Rn})m\phi}$$
+where:
+
+$m = m_o + (1-m_0)FR$
+
+$\eta_{Rx}$ = root allocation under poor conditions
+
+$\eta_{Rn}$ = root allocation under optimal conditions]
+
+.pull-right[![](img/U4/3pg/3pg_allocation_root.png)]
+
+
+---
+
+# Foliage and stem allocation
+
+---
+
+# Litter-fall & root-turnover
+
+---
+
+# Site and environmental effects
+
+---
+
+# Site and environmental effects
+
+---
+# Growth modifiers
+
+---
+
+# Growth modifiers
+## Temperature growth modifier
+
+---
+# Growth modifiers
+## Frost growth modifier
+
+---
+# Growth modifiers
+## Soil water growth modifier
+
+---
+# Growth modifiers
+## VPD growth modifier
+
+---
+# Growth modifiers
+## Age-related growth modifier
+
+---
+# Growth modifiers
+## CO2 growth modifier
+
+---
+# Growth modifiers
 
 
 
