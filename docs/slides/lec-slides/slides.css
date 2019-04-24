@@ -105,7 +105,7 @@ body {
   border-top: 0 solid #23373B;
   background-image: url("resources/images/hex_stickers.png");
   background-position: right center;
-  background-size: ;
+  background-size:cover;
 }
 
 .title-slide > h1  {
@@ -153,12 +153,10 @@ body {
   margin-left: 15px;
 }
 
-h1 {
-    font-size: 130%;
-      font-weight: 600;
+.full-screen {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Naruto_Shiki_Fujin.svg);
+  background-size: contain;
 }
-
-
 
 .remark-slide-number {
   font-size: 13pt;
@@ -350,6 +348,7 @@ div.tweaked-header {
 
 .pull-left-wide-right {
   float: right;
+  font-size: 80%;
   width: 35%;
 }
 
@@ -360,7 +359,28 @@ div.tweaked-header {
 
 .pull-right-wide-left {
   float: left;
+  font-size: 80%;
   width: 35%;
+}
+
+
+.tri-col-left{
+  float: left;
+  font-size: 90%;
+  width: 33%;
+}
+
+.tri-col-center{
+  float: left;
+  width: 33%;
+  font-size: 90%;
+
+}
+
+.tri-col-right{
+  float: right;
+  font-size: 90%;
+  width: 33%;
 }
 
 /************************************
