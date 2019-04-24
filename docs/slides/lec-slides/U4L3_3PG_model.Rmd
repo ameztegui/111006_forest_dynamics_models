@@ -186,6 +186,105 @@ background-image:url("img/U4/3pg/3pg_conceptual.png")
 
 # 3-PG is a carbon balance model
 .footnote[McMurtrie & Wolf (1983) model]
-.pull-right-wide-left[radiation is intercepted by the canopy
-converted to assimilates]
-![](img/U4/3pg/3pg_process_carbon balance.png)
+![](img/U4/3pg/3pg_process_carbon balance_text.png)
+
+---
+
+# 3-PG is a carbon balance model
+.footnote[McMurtrie & Wolf (1983) model]
+![](img/U4/3pg/3pg_process_carbon balance_text2.png)
+
+---
+
+# Light interception
+
+.tri-col-left[![](img/U4/3pg/3pg_process_light.png)]
+.tri-col-center[
+- Light is absorbed as it passes through the canopy
+- Intercepted radiation varies with LAI via Beer's law:
+$$I = I_o(1-e^{k·LAI})$$
+LAI determined by SLA and foliage biomass
+]
+    
+.tri-col-right[
+![](img/U4/3pg/light_transmission.png)
+![](img/U4/3pg/3pg_beer.png)
+]
+
+---
+
+# 3-PG is a carbon balance model
+.footnote[McMurtrie & Wolf (1983) model]
+![](img/U4/3pg/3pg_process_carbon balance_text3.png)
+---
+# Production & Solar radiation
+
+.pull-left[
+- Above-ground gross production linearly related to intercepted radiation
+$$ P_g = \alpha_c(1-e^{-kL})Q_0$$
+
+- Slope is a measure of **light use efficiency (LUE)** also known as *canopy quantum efficiency* denoted by $\alpha_c$
+
+* .font80[annual stand-level LUE stable]
+* .font80[Species-specific]
+* .font80[Varies with climate and site factors through simple modifiers]
+    
+
+$$\alpha_c = f_T·f_F·f_N·min(f_D,f\theta)·f_{age}·\alpha_c$$
+
+
+####.center[This finding is the basis for many simple growth models]
+]
+
+.pull-right[![](img/U4/3pg/radiation_growth.png)]
+
+
+---
+# Production: Net Primary Production (NPP)
+
+.pull-left[- 3-PG assumes constant fraction (Y = 0.47) of GPP is lost as construction and maintenance respiration
+
+- Net primary production is then
+$$P_n = YP_g = \epsilon Y(1-e^{-kL})Q_o$$
+
+- $Y$ probably varies seasonally with temperature
+    - this would be an issue for a daily version of 3-PG
+    ]
+    
+.pull-right[![](img/U4/3pg/net_primary_production.png)]
+
+---
+
+class: middle, inverse
+layout: false
+
+# Your turn!
+<iframe src="https://giphy.com/embed/13awhIC2CcDaHC" width="480" height="336" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+---
+
+class: full-screen
+background-image:url("img/U4/3pg/3pg_process_carbon balance_text4.png")
+# Allocation: Biomass partitioning
+
+---
+# Allocation: Biomass partitioning
+
+NPP is paritioned into biomass pools (tDM·ha-1)
+- foliage $W_F$
+- aboveground woody tissue $W_S$
+- roots $W_R$
+
+Partitioning rates ( $\eta_F, \eta_R, \eta_S$) depend on site & growth conditions, and also on stand DBH
+
+Litter-fall ( $\gamma_F$) and root-turnover ( $\gamma_R$)
+ als taken into account.
+ 
+Thus:
+
+$$\Delta W_F = \eta_F P_n - \gamma_F W_F$$
+$$\Delta W_R = \eta_R P_n - \gamma_R W_R$$
+$$\Delta W_S = \eta_S P_n $$
+
+
+
