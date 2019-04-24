@@ -184,10 +184,23 @@ background-image:url("img/U4/3pg/3pg_conceptual.png")
 ![](img/U4/3pg/3pg_process.png)
 ---
 
+class:full-screen
+background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 # 3-PG is a carbon balance model
-.footnote[McMurtrie & Wolf (1983) model]
-![](img/U4/3pg/3pg_process_carbon balance_text.png)
+.tri-col-right[
+</br></br></br></br></br></br></br></br>
+* radiation is intercepted by the canopy
+* converted to assimilates
+]
 
+.tri-col-left[
+</br></br></br></br></br></br></br></br></br></br>
+* allocated to foliage, stem & roots
+* lost to respiration, litterfall & root turnover
+
+
+]
+.footnote[McMurtrie & Wolf (1983) model]
 ---
 
 # 3-PG is a carbon balance model
@@ -326,13 +339,49 @@ $\eta_{Rn}$ = root allocation under optimal conditions]
 
 # Foliage and stem allocation
 
+Above-ground allocation is based on foliage:stem partitioning ratio
+
+$$\rho_{FS} = \frac{\eta_F}{\eta_S} = a_pB^{n_p}$$
+Increasing DBH decreases foliage allocation and increases stem allocation. 
+
+![](img/U4/3pg/3pg_allocation_foliage.png)
+.footnote[Waring et al 2016, For Ecol Manage]
+
 ---
 
 # Litter-fall & root-turnover
 
+**Litter-fall** an age-dependent fraction of foliage biomass
+
+$$\gamma_F(t)=\frac{\gamma_{F_x}\gamma_{F_0}}{\gamma_{F_0} + (\gamma_{F_X}-\gamma_{F_0})e^{-kT}},  k = \frac{1}{t_{\gamma_F}}ln(1+\frac{\gamma_{F_X}}{\gamma_{F_0}})$$
+
+.pull-left[
+where:
+
+$\gamma_{F_0}$ = litterfall rate at age 0
+
+$\gamma_{F_X}$ = maximum litterfall rate (may be stress-related)
+
+$t_{\gamma_F}$ = age when $\gamma_F = 0.5(\gamma_{F_0} + \gamma_{F_X})$
+]
+
+.pull-right[
+![](img/U4/3pg/3pg_allocation_turnover.png)
+]
+
+
+**Root turnover** constant fraction of root biomass ( $\gamma_R$ = 0.015 month-1)
+
 ---
 
+class:full-screen
+background-image:url("img/U4/3pg/3pg_process_environmental.png")
+
 # Site and environmental effects
+
+</br>
+Site & environmental factors affect growth via simple empirical modifiers
+
 
 ---
 
