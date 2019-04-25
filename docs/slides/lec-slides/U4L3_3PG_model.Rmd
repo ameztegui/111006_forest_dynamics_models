@@ -489,7 +489,7 @@ where:
 # Growth modifiers
 ## Age-related growth modifier
 
-.font120[$$f_{age}(t)=\frac{1}{1+(t/r_{age}t_x)^{n_{age}}}]$$]
+.font120[$$f_{age}(t)=\frac{1}{1+(t/r_{age}t_x)^{n_{age}}}$$]
 .pull-left[
 where:
 
@@ -500,10 +500,11 @@ where:
 ]
 
 .pull-right[![](img/U4/3pg/3pg_gm_age_chart.png)]
+
 ---
+
 # Growth modifiers
 ## CO2 growth modifier
-
 
 .center[![](img/U4/3pg/3pg_gm_co2_form.png)]
 
@@ -515,7 +516,6 @@ where:
 
 
 .pull-right[![](img/U4/3pg/3pg_gm_co2_chart.png)]
-
 
 ---
 # Growth modifiers
@@ -619,6 +619,7 @@ background-image: url("img/U4/3pg/stem_volume.png")
 
 # Newer versions
 
+.center[![](img/U4/3pg/weibull.png)]
 ---
 # Modelling mortality: density-independent 
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>Physiological Principles Predict Growth (3PG)</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="Aitor Ameztegui" />
     <meta name="date" content="2018-01-22" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -205,7 +205,7 @@ background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 .tri-col-center[
 - Light is absorbed as it passes through the canopy
 - Intercepted radiation varies with LAI via Beer's law:
-`$$I = I_o(1-e^{kÂ·LAI})$$`
+`$$I = I_o(1-e^{k·LAI})$$`
 LAI determined by SLA and foliage biomass
 ]
     
@@ -241,7 +241,7 @@ $$ P_g = \alpha_c(1-e^{-kL})Q_0$$
 * .font80[Varies with climate and site factors through simple modifiers]
     
 
-`$$\alpha_c = f_TÂ·f_FÂ·f_NÂ·min(f_D,f\theta)Â·f_{age}Â·\alpha_c$$`
+`$$\alpha_c = f_T·f_F·f_N·min(f_D,f\theta)·f_{age}·\alpha_c$$`
 
 
 ####.center[This finding is the basis for many simple growth models]
@@ -284,7 +284,7 @@ background-image:url("img/U4/3pg/3pg_process_carbon balance.png")
 ---
 # Allocation: Biomass partitioning
 
-NPP is paritioned into biomass pools (tDMÂ·ha-1)
+NPP is paritioned into biomass pools (tDM·ha-1)
 - foliage `\(W_F\)`
 - aboveground woody tissue `\(W_S\)`
 - roots `\(W_R\)`
@@ -324,7 +324,7 @@ poor conditions favour below-ground growth
 Root allocation affected by growth conditions and by soil fertility
 
 .pull-left[
-`$$\eta_R = \frac{\eta_{Rx}Â·\eta_{Rn}}{\eta_{Rn}+(\eta_{Rx}-\eta_{Rn})m\phi}$$`
+`$$\eta_R = \frac{\eta_{Rx}·\eta_{Rn}}{\eta_{Rn}+(\eta_{Rx}-\eta_{Rn})m\phi}$$`
 where:
 
 `\(m = m_o + (1-m_0)FR\)`
@@ -468,7 +468,7 @@ where:
 # Growth modifiers
 ## Age-related growth modifier
 
-.font120[$$f_{age}(t)=\frac{1}{1+(t/r_{age}t_x)^{n_{age}}}]$$]
+.font120[$$f_{age}(t)=\frac{1}{1+(t/r_{age}t_x)^{n_{age}}}$$]
 .pull-left[
 where:
 
@@ -479,10 +479,11 @@ where:
 ]
 
 .pull-right[![](img/U4/3pg/3pg_gm_age_chart.png)]
+
 ---
+
 # Growth modifiers
 ## CO2 growth modifier
-
 
 .center[![](img/U4/3pg/3pg_gm_co2_form.png)]
 
@@ -494,7 +495,6 @@ where:
 
 
 .pull-right[![](img/U4/3pg/3pg_gm_co2_chart.png)]
-
 
 ---
 # Growth modifiers
@@ -598,6 +598,7 @@ background-image: url("img/U4/3pg/stem_volume.png")
 
 # Newer versions
 
+.center[![](img/U4/3pg/weibull.png)]
 ---
 # Modelling mortality: density-independent 
 
@@ -636,6 +637,7 @@ at 2: mortality reduces population to 2']
 
 .pull-right[![](img/U4/self_thinning.png)]
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
@@ -645,16 +647,57 @@ at 2: mortality reduces population to 2']
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
 })();</script>
 
 <script>
 (function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -668,7 +711,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
