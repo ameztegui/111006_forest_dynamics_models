@@ -77,7 +77,7 @@ body {
 }
 
 .remark-slide-content > h2, .pull-left > h2, .pull-extleft > h2, .pull-right > h2,
-.pull-left-wide > h2, .pull-left-wide_right > h2,
+.pull-left-wide > h2, .pull-left-wide-right > h2,
 .pull-right-wide > h2, .pull-right-wide-left > h2 {
   font-size: 35px;
   font-weight: 400;
@@ -340,7 +340,15 @@ div.tweaked-header {
 
 /* extreme pulling to sides */
 
+.pull-extleft {
+    float: left;
+    width: 80%;
+}
 
+.pull-extleft-right {
+    float: right;
+    width: 20%;
+} 
 .pull-left-wide {
   float: left;
   width: 65%;
@@ -508,8 +516,6 @@ img {
     opacity: 0.5;
 }
 
-
-
 .blur {
     -webkit-filter: blur(5px);
     -moz-filter: blur(10px);
@@ -523,10 +529,6 @@ img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-
-
-
-
 
 
 /**************
