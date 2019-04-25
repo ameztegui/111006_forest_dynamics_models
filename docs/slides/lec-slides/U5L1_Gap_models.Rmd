@@ -47,84 +47,140 @@ color_palette <- list(gray = "#999999",
 
 # Background/context
 
-.left-column[![](img/U5/barra_arbol.png)]
+.pull-right-wide-left[
+![](img/U5/barra_arbol.png)]
 
-.right-column[
-* Long-time interest of ecologists for long-term dynamics of forest ecosystems (Clements 1916, Gleason 1926, Whittaker 1953)
+.pull-right-wide[
 
-* Only in the 60s-70s there was enough computing capability to construct complex mathematical models
+- Long-time interest of ecologists for **long-term dynamics** of forest ecosystems (Clements 1916, Gleason 1926, Whittaker 1953)
 
-* The first attempts (1964-1969) were fully three-dimensional, individual-based tree models (3-D geometry of each individual crown, crown interactions, stem volume at various heights…)
-
-* 1972: JABOWA, first gap model (Botkin et al. 1972) 
-Stand structure and composition are the summary of births, deaths and growth of hundreds of individual tres  individual-based models, but are more simple and mimic gap dynamics theory  gap models
+{{content}}
 ]
+--
+
+- Only in the 60s-70s there was enough **computing capability** to construct complex mathematical models
+{{content}}
+
+--
+
+- The first attempts (1964-1969) were fully three-dimensional, individual-based tree models (3-D geometry of each individual crown, crown interactions, stem volume at various heights…)
+{{content}} 
+--
+- 1972: JABOWA, first _gap model_ (Botkin et al. 1972) </br>
+Stand structure and composition are the summary of births, deaths and growth of hundreds of **individual trees** --> individual-based models, but are *more simple* and mimic gap dynamics theory --> gap models
 
 ---
 
 # Gap dynamics theory
 
-.left-column[![](img/U5/barra_arbol.png)]
+.pull-right-wide-left[![](img/U5/barra_arbol.png)]
 
-.right-column[
-* Gaps: small openings in a forest canopy(usually less than 1 ha)
+.pull-right-wide[
 
-* In temperate forests, gaps form at 0.5-2.0% per year, due to natural mortality, windthrows, pests…
+* **Gaps:** small openings in a forest canopy (usually less than 1 ha)
+{{content}}
+]
 
-* Gap size varies, favouring species with different shade-tolerance
+--
 
-* Gaps provide micro-environmental conditions that allow the establishment of shade intolerant species. Allows to maintain their populations in mature or old-growth forests.
+* In temperate forests, gaps form at **0.5-2.0% per year**, due to natural mortality, windthrows, pests…
+{{content}}
+
+--
+
+* Gap size <u>**varies**</u>, favouring species with different shade-tolerance
+{{content}}
+
+--
+* Gaps provide micro-environmental conditions that allow the establishment of **shade intolerant species**. Allows to maintain their populations in mature or old-growth forests.
+{{content}}
+
+--
 
 * Valid in several biomes: all?
-]
+{{content}}
+
+--
+
+##What do you think?
+
 ---
 class:full-screen
 background-image:url("img/U5/gap_BC.png")
+background-size:cover
 
 ---
+class:inverse, left
+background-image:url("img/U5/hubbard_forest.png")
+background-size:cover
 
 # JABOWA model (1972)
 
-.pull-left[
-* Janak, Botkin and Wallis
-* Collaboration between Hubbard Brook Experimental forest and IBM 
-* Based on gap dynamics theory, makes a series of assumptions
-* Is the basis of ALL gap models]
 
-.pull-right[
-![](img/U5/hubbard_sign.png)
-![](img/U5/hubbard_watershed.png)
+.pull-left[
+{{content}}
 ]
 
-![](img/U5/hubbard_forest.png)
+--
+</br></br></br></br>
+- **Ja**nak, **Bo**tkin and **Wa**llis
+{{content}}
+
+--
+
+- Collaboration between Hubbard Brook Experimental forest and IBM 
+{{content}}
+
+--
+
+- Based on gap dynamics theory, makes a series of *assumptions*
+{{content}}
+
+--
+
+- Is the basis of **<u>ALL gap models</u>**
+
+
 
 
 ---
-
+class:font120
 # JABOWA model (1972)
 
 ### Four basic assumptions
 
-.pull-left-wide[
-.font90[1. The forest stand is abstracted as a composite of many patches, each with different age and successional stage. Patch size so that one large individual can dominate the patch. For trees: 100-1000 m2
-
-2. Patches are horizontally homogeneous, i.e. tree position within a patch is not considered. All tree crowns extend horizontally across the entire patch. 
-
-3. The leaves of each tree are located in an indefinitely thin layer (disk) at the top of the tree
-
-4. Successional processes are described on each patch separately, i.e. there are no interactions between patches
-]
-
-.center[
-Assumes horizontal competition among individuals within a patch is homogeneous, but is spatially explicit in the vertical dimension
- Simplification, but allowed for mixed-age, mixed-species stands
-]
-]
 .pull-left-wide-right[
 ![](img/U5/jabowa_poster.png)
-
 ![](img/U5/jabowa_layers.png)
 ]
+
+.pull-left-wide[{{content}}]
+
+--
+1. The forest stand is abstracted as a **composite of many patches**, each with different age and successional stage. Patch size so that one large individual can dominate the patch. For trees: 100-1000 m2
+{{content}}
+--
+ 
+2. **Patches are horizontally homogeneous**, i.e. tree position within a patch is not considered. All tree crowns extend horizontally across the entire patch. 
+{{content}}
+
+--
+3. The leaves of each tree are located in **an indefinitely thin layer (disk)** at the top of the tree
+{{content}}
+
+--
+4. Successional processes are described on each patch separately, i.e. there are **no interactions between patches**
+{{content}}
+
+--
+
+Assumes horizontal competition among individuals within a patch is **homogeneous**, but is spatially explicit in the **vertical dimension**
+
+Simplification, but allowed for **mixed-age, mixed-species stands**
+
+
+
+
 
 ---
 # JABOWA model (1972)
@@ -133,13 +189,13 @@ Assumes horizontal competition among individuals within a patch is homogeneous, 
 
 .pull-left-wide[
 .font90[
-5. The entity modeled is the individual: establishment, growth and mortality of each individual is considered
+5. The entity modeled is the **individual**: establishment, growth and mortality of each individual is considered
 
-6. Considers composition and structure, but not functioning (biogeochemical cycles, flows of water, photosynthesis…)
+6. Considers composition and structure, but **not functioning** (biogeochemical cycles, flows of water, photosynthesis…)
 
-7. Other life-forms (shrubs, grasses) are ignored
+7. **Other life-forms** (shrubs, grasses) are **ignored**
 
-8. Establishment comes from an external list of potential colonists
+8. Establishment comes from an **external list of potential colonists**
 
 ![](img/U5/jabowa_web.png)
 ]
@@ -164,9 +220,12 @@ https://www.danielbbotkin.com/jabowa/
 
 # JABOWA model: growth
 
-Growth is modeled as a deterministic process, based on maximum posible growth, which is reduced by a series of scalars.
+.pull-extleft[Growth is modeled as a deterministic process, based on maximum posible growth, which is reduced by a series of scalars.
 
 $$\frac{\Delta D}{\Delta t} = G·D·(1-\frac{D·H}{D_{max}·H_{max}})·\frac{1}{b(D)}·f(e)$$
+
+]
+.pull-extleft-right[![](img/U5/growth.png)]
 .pull-left[
 where:
 * $D$ is diameter
@@ -184,27 +243,30 @@ where:
 
 # JABOWA model: growth reductors (I)
 
-Optimal growth is reduced based on three scalars [0-1]
+.pull-extleft[Optimal growth is reduced based on three scalars [0-1]
 
 $$f(e) = g_1(AL)·g_2(SBAR)·g_3(DD)$$
-.pull-left-wide[
-$g_1(AL)$ is a function of available light 
+
+.tri-col-left[.right[![](img/U5/sun.png)]]
+.tri-col-center[.right[![](img/U5/suns.png)![](img/U5/water.png)![](img/U5/nutirents.png)]]
+.tri-col-right[![](img/U5/temperature.png)] $.$
+
+.font90[ $g_1(AL)$ is a function of available light 
 
 $g_2(SBAR)$ is a function of stand basal area 
 
-$g_3(DD)$ is a function of temperature (annual degree-day sum)
-]
-.pull-left-wide-right[
-![](img/U5/growth.png)
-]
-.pull-left-wide[
+$g_3(DD)$ is a function of temperature (annual degree-day sum)]]
 
-* The only resource for which there is explicit competition is light
+.pull-extleft-right[
+![](img/U5/growth.png)]
 
+.pull-extleft[
+
+.font90[* The only resource for which there is explicit competition is light
 * Belowground resources are summarized in the SBAR factor
-
 * Drought not explicitly modeled (not important in New Hampshire)
 
+]
 ]
 
 ---
@@ -389,7 +451,7 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 
 # JABOWA model: establishment
 
-.pull-left-wide[
+.pull-extleft[
 * No interactions between patches, so assumes all tree species are present in each patch (100 m2)
 * New trees are added based on three criteria (3-D regeneration niche):
     
@@ -399,7 +461,7 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 * Annual sum of degree days (DD) must lie within a range tolerated by the species
 ]
 ]
-.pull-left-wide-right[
+.pull-extleft-right[
 ![](img/U5/recruitment.png)]
 
 
@@ -419,11 +481,11 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 
 # JABOWA model: mortality
 
-.pull-left-wide[
+.pull-extleft[
 * Stochastic process with two components
     * Background mortality: (2% of trees reach maximum tree size)   
     * Stress-related mortality: acts when growth < 0.01 cm/year (not species-specific)]
-.pull-left-wide-right[![](img/U5/mortality.png)]
+.pull-extleft-right[![](img/U5/mortality.png)]
 
 ![](img/U5/mortality_bugmann.png)
 
@@ -434,17 +496,25 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 .pull-left[.font90[
 * Very simple model, still useful
 
-* ALL gap models are direct descendants of JABOWA
-* Almost all the assumptions have been challenged, scrutinized or replaced --> large variety of gap models
+* **<u>ALL gap models</u>** are direct descendants of JABOWA
+* Almost all the assumptions have been challenged, scrutinized or **<u>replaced**</u> --> large variety of gap models
 ]]
 --
 .pull-right[![](img/U5/gap_models_tree.png)]
-
+--
 ![](img/U5/gap_models_use.png)
 ---
 
 # Gap models: FORET (1977)
 
+.pull-right[
+.bottom2[![](img/U5/foret_poster.png)
+
+![](img/U5/gap_models_tree.png)]
+
+
+]
+--
 .pull-left[
 * Still assumes that the forest can be divided into small (typically the size of a large canopy tree) cells. 
 
@@ -455,24 +525,21 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 * However, these seedlings are often dispersed globally (non-spatial)
 ]
 
-.pull-right[
-![](img/U5/foret_poster.png)
-![](img/U5/gap_models_tree.png)
-]
+
 ---
 
 # Variations in assumptions in gap models
 
 .pull-left[.font90[
-1) **Forest as a mosaic of patches:** all gap models but SORTIE-ND
+* **Forest as a mosaic of patches:** all gap models but SORTIE-ND
 
-2) **Horizontal structure within a patch:** almost all gap models retain this assumption. Patch size usually not so important, but causes problems when photosynthesis and respiration are added (model 4C; solved using estimates of crown projection area)
+* **Horizontal structure within a patch:** almost all gap models retain this assumption. Patch size usually not so important, but causes problems when photosynthesis and respiration are added (model 4C; solved using estimates of crown projection area)
 
-3) **All leaves are at the top of the tree:** several alternatives have been tried
+* **All leaves are at the top of the tree:** several alternatives have been tried
 
-* FORSKA: adds two state variables (crown height and leaf area from pipe model) --> crown overlap, leads to family of based models. FORSKA >> ZELIG in Picea-Pinus
+   .font90[ * FORSKA: adds two state variables (crown height and leaf area from pipe model) --> crown overlap, leads to family of based models. FORSKA >> ZELIG in Picea-Pinus
 
-* SORTIE: further sophistication, includes individual tree crowns and transmissivity
+* SORTIE: further sophistication, includes individual tree crowns and transmissivity]
 ]
 ]
 
@@ -490,7 +557,7 @@ class:font100
 # Variations in assumptions in gap models
 
 .pull-left[
-4) **Relationships between patches:**
+**Relationships between patches:**
 * ZELIG (Urban, 1990); newer versions of FORET 
 * PICUS and SORTIE add seed dispersal
 * SORTIE-ND (2005): spatially-explicit, individual-based competition
@@ -500,7 +567,7 @@ class:font100
 ![](img/U5/gap_poster.png)]
 
 .pull-left-wide[
-5) **Entities being modelled:**
+**Entities being modelled:**
 * Modelling all trees is time-consuming, and since growth is deterministic…
 * ForClim (Bugmann, 1996) introduces the use of cohorts. All trees established a year are identical (simulation time ¼)
 * Further simplifications: 
@@ -509,8 +576,8 @@ class:font100
     * Statistical simplification: Markov chains (probability between states; MOSAIC) or partial differential equations (DisCForM)
 
 
-6) **Ecosystem structure and function**
-
+**Ecosystem structure and function**
+* 
 Recently, gap modelers try to go beyond structure and function (photoshynthesis, carbon balance): physiology-based gap models 4C, HYBRID and FIRE-BGC were the first, but then many models
 ]
 
@@ -524,19 +591,19 @@ Recently, gap modelers try to go beyond structure and function (photoshynthesis,
 # Variations in processes
 
 .pull-extleft[.small[
-1) **GROWTH**
+**GROWTH**
 * Different allometric relationships
 * Less simplistic allocation
 * Competition for light similar to JABOWA
 * Competition for other resources generally not included except in physiology-based models 
 * Change parabolic temperature effect for asymptotic
 
-2) **ESTABLISHMENT:** tended to high diversity in each patch and low across patches
+**ESTABLISHMENT:** tended to high diversity in each patch and low across patches
 * First improvement: seed availability depends on presence of mature trees
 * Second improvement: horizontal relationships between patches are considered
 * Most still use filters to define n-dimensional regeneration space
 
-3) **MORTALITY**
+**MORTALITY**
 * Most models use stochastic “background” mortality
 * Stress-related mortality is used in all models, but the definition of “stress” varies
 * Clear trend to include disturbance-related mortality: pests, fires, windthrow, **HARVEST!!!!**
@@ -545,7 +612,12 @@ Recently, gap modelers try to go beyond structure and function (photoshynthesis,
 
 .pull-extleft-right[
 ![](img/U5/growth.png)
+</br></br>
+</br>
+
 ![](img/U5/recruitment.png)
+</br>
+</br>
 ![](img/U5/mortality.png)
 ]
 
@@ -567,15 +639,25 @@ Recently, gap modelers try to go beyond structure and function (photoshynthesis,
 
 Gap models simulate long-term population dynamics - which are slow – on small patches and with several stochastic processes.
 
-1) The stochasticity makes a single simulation of little interest. Standard: several runs and statistical treatments (average, median, sd, kurtosis…)  less practical
+--
 
-2) Few data sources to initialize stands due to the smaller scale of most measurements. Standard practice to initialize from “bare ground” and wait for dynamics to stabilize (~400-800 years). Gap models mostly used to simulate secondary succession less practical
+1. The stochasticity makes **a single simulation of little interest**. Standard: several runs and statistical treatments (average, median, <u>sd, kurtosis</u>…) --> *less practical*
 
-3) This raises the limitation on climatic data availability for such long series. 
+--
 
-4) Difficult to validate, due to limitations in the comparability. No forest will have gone through exactly the same processes (management!!). Model evaluation more used than proper validation  importance of long-term data!
+2. **Few data sources to initialize stands** due to the smaller scale of most measurements. Standard practice to initialize from “bare ground” and wait for dynamics to stabilize (~400-800 years). Gap models mostly used to simulate secondary succession --> *less practical*
 
-5) Original models not valid to assess effects of climate change. Newer versions are much better, include some physiology but number of parameters!!!
+--
+
+3. This raises the limitation on **climatic data availability** for such long series. 
+
+--
+
+4. **Difficult to validate**, due to limitations in the comparability. No forest will have gone through exactly the same processes (**management!!**). <u>Model evaluation</u> more used than proper validation ->*importance of long-term data!*
+
+--
+
+5. Original models **not valid to assess effects of climate change**. Newer versions are much better, include some physiology->*but number of parameters!!!*
 
 ---
 
@@ -624,22 +706,19 @@ Gap models simulate long-term population dynamics - which are slow – on small 
 
 # To know more
 
-Bugmann, H., 2001. A review of forest gap models. Climatic Change 51, 259–305.
+* Bugmann, H., 2001. A review of forest gap models. Climatic Change 51, 259–305.
 
-Fontes, L., Bontemps, J.-D., Bugmann, H., Van Oijen, M., Gracia, C., Kramer, K., Lindner, M., Rötzer, T., Skovsgaard, J.P., 2011. Models for supporting forest management in a changing environment. Forest Systems 3, 8. 
+* Fontes, L., Bontemps, J.-D., Bugmann, H., Van Oijen, M., Gracia, C., Kramer, K., Lindner, M., Rötzer, T., Skovsgaard, J.P., 2011. Models for supporting forest management in a changing environment. Forest Systems 3, 8. 
 
-Larocque, G.R., Shugart, H.H., Xi, W., Holm, J.A., 2016. Forest Succession Models 43.
+* Larocque, G.R., Shugart, H.H., Xi, W., Holm, J.A., 2016. Forest Succession Models 43.
 
-Liu, J., Ashton, P.S., 1995. Individual-based simulation models for forest succession and management. Forest Ecology and Management 73, 157–175
+* Liu, J., Ashton, P.S., 1995. Individual-based simulation models for forest succession and management. Forest Ecology and Management 73, 157–175
 
-Porté, A., Bartelink, H.H., 2002. Modelling mixed forest growth: a review of models for forest management. Ecological Modelling 150, 141–188. 
+* Porté, A., Bartelink, H.H., 2002. Modelling mixed forest growth: a review of models for forest management. Ecological Modelling 150, 141–188. 
 
-Shugart, H.H., Wang, B., Fischer, R., Ma, J., Fang, J., Yan, X., Huth, A., Armstrong, A.H., 2018. Gap models and their individual-based relatives in the assessment of the consequences of global change. Environmental Research Letters 13, 033001. 
-
-
+* Shugart, H.H., Wang, B., Fischer, R., Ma, J., Fang, J., Yan, X., Huth, A., Armstrong, A.H., 2018. Gap models and their individual-based relatives in the assessment of the consequences of global change. Environmental Research Letters 13, 033001. 
 
 
-# The dynamics of gap models: variations in assumptions
 
 
 
