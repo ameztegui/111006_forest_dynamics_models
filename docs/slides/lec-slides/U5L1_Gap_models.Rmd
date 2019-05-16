@@ -44,13 +44,17 @@ color_palette <- list(gray = "#999999",
 
 ```
 
+layout: true
+background-image:url("img/U5/barra_arbol.png")
+background-size: contain
+background-position: left
+
+---
 
 # Background/context
 
-.pull-right-wide-left[
-![](img/U5/barra_arbol.png)]
 
-.pull-right-wide[
+.right-column[
 
 - Long-time interest of ecologists for **long-term dynamics** of forest ecosystems (Clements 1916, Gleason 1926, Whittaker 1953)
 
@@ -73,9 +77,8 @@ Stand structure and composition are the summary of births, deaths and growth of 
 
 # Gap dynamics theory
 
-.pull-right-wide-left[![](img/U5/barra_arbol.png)]
 
-.pull-right-wide[
+.right-column[
 
 * **Gaps:** small openings in a forest canopy (usually less than 1 ha)
 {{content}}
@@ -108,6 +111,13 @@ Stand structure and composition are the summary of births, deaths and growth of 
 class:full-screen
 background-image:url("img/U5/gap_BC.png")
 background-size:cover
+
+---
+class:full-screen
+background-image:url("")
+background-size:cover
+
+MATA DE VALENCIA!
 
 ---
 class:inverse, left
@@ -144,6 +154,7 @@ background-size:cover
 
 
 ---
+layout:false 
 class:font120
 # JABOWA model (1972)
 
@@ -165,12 +176,24 @@ class:font120
 {{content}}
 
 --
-3. The leaves of each tree are located in **an indefinitely thin layer (disk)** at the top of the tree
+3. The leaves of each tree are located in **an indefinitely thin layer (disk)** at the top of the tree.
 {{content}}
 
 --
 4. Successional processes are described on each patch separately, i.e. there are **no interactions between patches**
 {{content}}
+
+---
+class:font120
+# JABOWA model (1972)
+### Four basic assumptions
+
+.pull-left-wide-right[
+![](img/U5/jabowa_poster.png)
+![](img/U5/jabowa_layers.png)
+]
+
+.pull-left-wide[{{content}}]
 
 --
 
@@ -179,53 +202,62 @@ Assumes horizontal competition among individuals within a patch is **homogeneous
 Simplification, but allowed for **mixed-age, mixed-species stands**
 
 
-
-
-
 ---
 # JABOWA model (1972)
 
 ### Additional assumptions 
 
-.pull-left-wide[
-.font90[
-5. The entity modeled is the **individual**: establishment, growth and mortality of each individual is considered
-
-6. Considers composition and structure, but **not functioning** (biogeochemical cycles, flows of water, photosynthesis…)
-
-7. **Other life-forms** (shrubs, grasses) are **ignored**
-
-8. Establishment comes from an **external list of potential colonists**
-
-![](img/U5/jabowa_web.png)
-]
-]
 
 .pull-left-wide-right[
 ![](img/U5/jabowa_book.png)
 
-https://www.danielbbotkin.com/jabowa/
-
-30 days trial ($150 for license)
-
-
+.footnote-right[https://www.danielbbotkin.com/jabowa/ </br>
+30 days trial ($150 for license)]
 ]
+
+
+.pull-left-wide[
+.font90[
+5) The entity modeled is the **individual**: establishment, growth and mortality of each individual is considered
+
+6) Considers composition and structure, but **not functioning** (biogeochemical cycles, flows of water, photosynthesis…)
+
+7) **Other life-forms** (shrubs, grasses) are **ignored**
+
+8) Establishment comes from an **external list of potential colonists**
+]
+{{content}}]
+
+--
+
+![](img/U5/jabowa_web.png)
+
+
 
 ---
 
 # JABOWA model:quick summary
 
 .center[![](img/U5/jabowa_summary.png)]
+
+---
+
+layout:true
+background-image:url("img/U5/growth.png")
+background-size: 210px
+background-position: right top
+
 ---
 
 # JABOWA model: growth
+
 
 .pull-extleft[Growth is modeled as a deterministic process, based on maximum posible growth, which is reduced by a series of scalars.
 
 $$\frac{\Delta D}{\Delta t} = G·D·(1-\frac{D·H}{D_{max}·H_{max}})·\frac{1}{b(D)}·f(e)$$
 
 ]
-.pull-extleft-right[![](img/U5/growth.png)]
+
 .pull-left[
 where:
 * $D$ is diameter
@@ -235,9 +267,11 @@ where:
 * $D_{max}$ and Hmax are maximum tree size
 ]
 
-.pull-right[
+.pull-right[{{content}}]
+--
+
 ![](img/U5/jabowa_growth.png)
-]
+
 
 ---
 
@@ -257,26 +291,29 @@ $g_2(SBAR)$ is a function of stand basal area
 
 $g_3(DD)$ is a function of temperature (annual degree-day sum)]]
 
-.pull-extleft-right[
-![](img/U5/growth.png)]
 
 .pull-extleft[
 
-.font90[* The only resource for which there is explicit competition is light
+.font90[{{content}}]]
+--
+* The only resource for which there is explicit competition is light
+{{content}}
+--
 * Belowground resources are summarized in the SBAR factor
+{{content}}
+
+--
 * Drought not explicitly modeled (not important in New Hampshire)
 
-]
-]
 
 ---
-
+layout: false
 # JABOWA model: growth reductors (II)
 
 
 .tri-col-left[
 #### Light availability factor
-Height is determined using allometric function of D (parabollic)
+Height as allometric function of D (parabollic)
 ]
 
 .tri-col-center[
@@ -291,7 +328,7 @@ Height is determined using allometric function of D (parabollic)
 
 .tri-col-left[
 #### Light availability factor
-Height is determined using allometric function of D (parabollic)
+Height as allometric function of D (parabollic)
 
 LAI is calculated via a simple allometric relationship to diameter 
 $$	LAI = cD^2/k$$
@@ -314,34 +351,12 @@ $$	LAI = cD^2/k$$
 .tri-col-left[
 #### Light availability factor
 
-Height is determined using allometric function of D (parabollic)
+Height as allometric function of D (parabollic)
 
 LAI is calculated via a simple allometric relationship to diameter 
 $$	LAI = cD^2/k$$
 
-Light extinction is predicted using the Beer-Lambert law. LA at the top of each tree is used to derive the AL scalar. 
-]
-
-.tri-col-center[
-![](img/U5/allom_HD.png)
-![](img/U5/allom_beer.png)
-]
-
-.tri-col-right[
-![](img/U5/allom_LD.png)
-]
----
-
-# JABOWA model: growth reductors (II)
-
-.tri-col-left[
-#### Light availability factor
-Height is determined using allometric function of D (parabollic)
-
-LAI is calculated via a simple allometric relationship to diameter 
-$$	LAI = cD^2/k$$
-
-Light extinction is predicted using the Beer-Lambert law. LA at the top of each tree is used to derive the AL scalar. 
+Light extinction is predicted using the Beer-Lambert law.
 ]
 
 .tri-col-center[
@@ -351,8 +366,6 @@ Light extinction is predicted using the Beer-Lambert law. LA at the top of each 
 
 .tri-col-right[
 ![](img/U5/allom_LD.png)
-![](img/U5/allom_growth_light.png)
-
 ]
 ---
 
@@ -360,12 +373,12 @@ Light extinction is predicted using the Beer-Lambert law. LA at the top of each 
 
 .tri-col-left[
 #### Light availability factor
-Height is determined using allometric function of D (parabollic)
+Height as allometric function of D (parabollic)
 
 LAI is calculated via a simple allometric relationship to diameter 
 $$	LAI = cD^2/k$$
 
-Light extinction is predicted using the Beer-Lambert law. LA at the top of each tree is used to derive the AL scalar. 
+Light extinction is predicted using the Beer-Lambert law
 ]
 
 .tri-col-center[
@@ -378,17 +391,94 @@ Light extinction is predicted using the Beer-Lambert law. LA at the top of each 
 ![](img/U5/allom_growth_light.png)
 
 ]
+---
 
-.pull-left[
-.font90[
+# JABOWA model: growth reductors (II)
+
+.tri-col-left[
+#### Light availability factor
+Height as allometric function of D (parabollic)
+
+LAI is calculated via a simple allometric relationship to diameter 
+$$	LAI = cD^2/k$$
+
+Light extinction is predicted using the Beer-Lambert law
+
+#### BUT...
+
+]
+
+.tri-col-center[
+![](img/U5/allom_HD.png)
+![](img/U5/allom_beer.png)
+]
+
+.tri-col-right[
+![](img/U5/allom_LD.png)
+![](img/U5/allom_growth_light.png)
+
+]
+
+
+.pull-left[.font90[
 * No asymptotic height allometry
 * LAI should not increase indefinitely but reach a plateau
-* All leaves are at the top of the tree (no overlap)
+* All leaves are at tree top (no overlap)
+]]
+
+
+---
+
+# JABOWA model: growth reductors (II)
+
+.tri-col-left[
+#### Light availability factor
+Height as allometric function of D (parabollic)
+
+LAI is calculated via a simple allometric relationship to diameter 
+$$	LAI = cD^2/k$$
+
+Light extinction is predicted using the Beer-Lambert law
+
+#### BUT...
+
 ]
+
+.tri-col-center[
+![](img/U5/allom_HD.png)
+![](img/U5/allom_beer.png)
 ]
+
+.tri-col-right[
+![](img/U5/allom_LD.png)
+![](img/U5/allom_growth_light.png)
+
+]
+
+
+.pull-left[.font90[
+* No asymptotic height allometry
+* LAI should not increase indefinitely but reach a plateau
+* All leaves are at tree top (no overlap)
+]]
+
 .pull-right[
-So… JABOWA overestimates the amount of shade cast by large trees, increasing their competitive strength
+So… JABOWA **overestimates** the amount of shade cast by large trees, inflating their <u>competitive strength
+</u>]
+
+---
+
+# JABOWA model: growth reductors (III)
+
+
+### Basal area factor
+
+.pull-left-wide[
+* Basal area integrates other resources for which trees compete (water, nutrients)
+
+* Growth decreases linearly with basal area (not species-specific)
 ]
+.pull-left-wide-right[![](img/U5/jabowa_BAF.png)]
 
 ---
 
@@ -412,13 +502,12 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 
 * Uses a parabollic relationship
 
+* This equation has been widely used in gap models but is <u>heavily criticized</u>
 
 ]
 
 .pull-left-wide-right[![](img/U5/growth_parab.png)]
 
-
-
 ---
 
 # JABOWA model: growth reductors (III)
@@ -441,13 +530,16 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 
 * Uses a parabollic relationship
 
-* This equation has been widely used in gap models but is heavily criticized
+* This equation has been widely used in gap models but is <u>heavily criticized</u>
 
 ]
 
 .pull-left-wide-right[![](img/U5/growth_asymp.png)]
 
 ---
+background-image:url("img/U5/recruitment.png")
+background-size:150px
+background-position:right top
 
 # JABOWA model: establishment
 
@@ -461,8 +553,7 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 * Annual sum of degree days (DD) must lie within a range tolerated by the species
 ]
 ]
-.pull-extleft-right[
-![](img/U5/recruitment.png)]
+
 
 
 .pull-left[
@@ -478,14 +569,16 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 
 
 ---
+background-image:url("img/U5/mortality.png")
+background-size: 200px
+background-position:right top
 
 # JABOWA model: mortality
 
 .pull-extleft[
 * Stochastic process with two components
-    * Background mortality: (2% of trees reach maximum tree size)   
-    * Stress-related mortality: acts when growth < 0.01 cm/year (not species-specific)]
-.pull-extleft-right[![](img/U5/mortality.png)]
+    * **Background mortality:** (2% of trees reach maximum tree size)   
+    * **Stress-related mortality:** acts when growth < 0.01 cm/year (not species-specific)]
 
 ![](img/U5/mortality_bugmann.png)
 
@@ -504,28 +597,42 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 --
 ![](img/U5/gap_models_use.png)
 ---
+background-image:url("img/U5/gap_models_tree.png")
+background-size: 350px
+background-position: right bottom
 
 # Gap models: FORET (1977)
 
-.pull-right[
-.bottom2[![](img/U5/foret_poster.png)
+.pull-left-wide-right[
+![](img/U5/foret_poster.png)]
+.pull-left-wide[{{content}}]
 
-![](img/U5/gap_models_tree.png)]
-
-
-]
 --
-.pull-left[
 * Still assumes that the forest can be divided into small (typically the size of a large canopy tree) cells. 
+{{content}}
+--
 
 * The most recent versions include the effects of local competition among cells.
-
+{{content}}
+--
 * New seedlings are produced by the adult trees on the landscape (prop. to abundance)
+{{content}}
 
+--
 * However, these seedlings are often dispersed globally (non-spatial)
-]
 
+---
 
+# Variations in assumptions in gap models
+
+.pull-left[.font90[
+* **Forest as a mosaic of patches:** all gap models but SORTIE-ND
+
+* **Horizontal structure within a patch:** almost all gap models retain this assumption. Patch size usually not so important, but causes problems when photosynthesis and respiration are added (model 4C; solved using estimates of crown projection area)
+]]
+
+.pull-right[
+![](img/U5/gap_models_tree.png)]
 ---
 
 # Variations in assumptions in gap models
@@ -554,6 +661,10 @@ So… JABOWA overestimates the amount of shade cast by large trees, increasing t
 ---
 
 class:font100
+background-image:url("img/U5/gap_poster.png")
+background-size:450px
+background-position:right top
+
 # Variations in assumptions in gap models
 
 .pull-left[
@@ -564,17 +675,25 @@ class:font100
 ]
 
 .pull-right[
-![](img/U5/gap_poster.png)]
+![]()]
 
-.pull-left-wide[
+.pull-left-wide[{{content}}]
+
+--
 **Entities being modelled:**
 * Modelling all trees is time-consuming, and since growth is deterministic…
-* ForClim (Bugmann, 1996) introduces the use of cohorts. All trees established a year are identical (simulation time ¼)
+
+--
+
+* ForClim (Bugmann, 1996) introduces the use of cohorts. All trees established a year are identical (simulation time ¼){{content}}
+--
+
 * Further simplifications: 
     * Few size classes (FLAM, FORMIX)
     * use of functional types instead of species
     * Statistical simplification: Markov chains (probability between states; MOSAIC) or partial differential equations (DisCForM)
 
+--
 
 **Ecosystem structure and function**
 * 
@@ -584,8 +703,6 @@ Recently, gap modelers try to go beyond structure and function (photoshynthesis,
 .pull-left-wide-right[
 ![](img/U5/forclim.png)
 ]
-
-
 
 ---
 # Variations in processes

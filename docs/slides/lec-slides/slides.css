@@ -45,6 +45,14 @@ body {
     font-size: 16px;
 }
 
+.footnote-right {
+    color: #23373B;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+}
+
 .remark-slide-content > h1 {
   font-family: 'Fira Sans';
   font-weight: normal;
